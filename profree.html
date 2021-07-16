@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="countDown.min.js"></script>
+    <link href="count.css" media="all" rel="stylesheet" />
+  <link rel="stylesheet" href="m.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+ 
+<header>
+
+
+ <div class="col-md-12 m-3 p-2"  id="nav">
+               
+               <a href="in.html"><img src="images/logo.svg" class="topleft" width="200px"></a>    
+ </div>
+            
+        
+ <div id="navbar">
+<div class="login-container">
+    <form action="/action_page.php">
+      
+      <button type="submit">Logout</button>
+    </form>
+</div>        
+
+  <a href="show.php">Showcase</a>
+  <a href="wwr.php" href="javascript:void(0)">Who we are </a>
+  <a href="javascript:void(0)">Terms and Conditions </a>
+  <!--<a href="placeorder.php">Place an Order</a>-->
+  <!--<a><button class="signin" onclick="openForm()" >Sign up</button></a>-->
+  <a class="active" href="javascript:void(0)">Home</a>
+
+        </div>
+  </div>
+ <div class="form-popup" id="myForms">
+     <form action="/action_page.php" class="form-container">
+     <h1>Login</h1>
+     <div class="form-element">
+        <label>Name</label>
+        <input type="text"required>
+     </div>
+     <div class="form-element">
+     <label>Email</label>
+     <input type="text"required>
+     </div>
+    <div class="form-element">
+    <table><tr><td> <label>Country</label>
+     <input type="text"required></td><td><label>City</label><input type="text"required></td></tr></table>
+    </div>
+    <div class="form-element">
+     <label>phone</label>
+     <input type="text"required>
+     </div>
+      <div>
+    <table>
+      <tr><td style="text-align:center"><button type="submit" class="btns">Login</button></td><td>
+    <button type="button" class="btns cancel" onclick="closeForm()">Close</button></td>
+     </tr>
+    </table>
+  </div>
+
+  
+  </form>
+ </div>
+<!--body part starts here ............body part starts here ............body part starts here ............-->
+<body>
+
+
+
+  <div class="rowad">
+    <div class="columnad leftad" >
+     <div>
+     <table class="profile">
+      <thead>
+        <tr>
+          <td colspan="1"><img src="images/pro.svg" class="topleft" width="50px"></td>
+          <td colspan="2" style="text-align:left;"><p >MY NAME </p><select class="clouds"name="" id="no">
+            <option value="1"></option>
+            <option value="2">Logo Designer </option>
+            <option value="3">Poster Designer</option>
+            <option value="4">Social Media Designer</option>
+            <option value="5">Social Media Marketer</option>
+            <option value="6">banner design</option>
+            <option value="7">UI/UX designer</option>
+            <option value="8">3D designer</option>
+            <option value="9">12</option>
+            <option value="10">13</option>
+          </select></td></tr>
+          
+          <tr rowspan="3"><td colspan="3" style="text-align: left;font-weight:bold;" ><p>Projects completed</p><p>On time Projects</p><p>Recommendations</p><p>Funds</p> <textarea style="height: 20px;width:50px;resize: none;">50$</textarea><button>Deposite funds</button><br><button>Fund withdraw request</button></td></tr>  
+        <tr><td colspan="3" >Describe yourself<div style="height:300px; background-color: rgb(191, 221, 250);">write a short description here</div></td></tr>
+         
+        </tr>
+      </thead>
+      </table>
+      <div class="projectlist">
+        <p>Projects                   Cost </p>
+         <div style="background-color: blue;height: 30px;width: 200px;margin: 4px;">a</div>
+         <div style="background-color: blue;height: 30px;width: 200px;margin: 4px;">b</div>
+         <div style="background-color: blue;height: 30px;width: 200px;margin: 4px;">c</div>
+          
+      </div>
+      <div class="reviewlist">
+        <p>Projects                   Cost </p>
+        <div style="background-color: rgb(94, 255, 0);height: 30px;width: 200px;margin: 4px;">a</div>
+        <div style="background-color: rgb(0, 255, 136);height: 30px;width: 200px;margin: 4px;">b</div>
+        <div style="background-color: rgb(0, 255, 64);height: 30px;width: 200px;margin: 4px;">c</div>
+   
+      </div>
+     
+      </div>
+    
+    </div>
+  
+   
+
+
+
+    <div class="columnad rightad" >
+      <div class="containerp">
+          <form >
+              <div class="part1">
+                  <div class="form-element">
+                      <span class="details"><p>project type*</p></span>
+                      <input class="textareafc" type="text"placeholder=""required>
+                  </div>
+                  <div class="form-element">
+                      <span class="details"><p>project title*</p></span>
+                      <input class="textareafc" type="text"placeholder=""required>
+                  </div>
+                  <div class="form-element">
+                      <span class="details"><p>project cost*</p></span>
+                      <input class="textareafc" type="text"placeholder=""required>
+                  </div>
+                 
+              </div>
+              <div class="part2">
+                  <p>project description</p>
+                  
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex a odit aut omnis excepturi? Aspernatur, atque vitae. Minus aliquid possimus animi deleniti optio dicta ipsum repudiandae quia quod ad quo recusandae, nam modi iusto accusamus! Iusto officiis laudantium necessitatibus modi autem corporis dolor labore, maiores animi, aut explicabo architecto pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, ipsum?
+              </div>
+  
+              <div>
+            <h4>Time remaining</h4>
+            
+    <div class="container5"></div>
+
+            
+          </div>   
+    <div class="chatall">     
+          <h2>Chat Messages</h2>   
+          <div class="container12">
+            
+            
+            <div class="container11">
+              <img src="images/proc.svg" alt="Avatar" style="width:100%;">
+              <p>Hello. How are you today?</p>
+              <span class="time-right">11:00</span>
+            </div>
+            
+            <div class="container11 darker">
+              <img src="images/pro.svg" alt="Avatar" class="right" style="width:100%;">
+              <p>Hey! I'm fine. Thanks for asking!</p>
+              <span class="time-left">11:01</span>
+            </div>
+            
+            <div class="container11">
+              <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
+              <p>Sweet! So, what do you wanna do today?</p>
+              <span class="time-right">11:02</span>
+            </div>
+            
+            <div class="container11 darker">
+              <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
+              <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+              <span class="time-left">11:05</span>
+            </div>
+            
+        </div> 
+        <div class="chatwid">
+            <table style="width:auto;"> <tr><td><textarea placeholder="Type message.." name="msg" class="textareaccc"></textarea>
+            </td><td><button type="submit" class="btnsend">Send</button></td></tr></table>
+          </div>
+            <div><input type="file" id="myFile" name="filename"></div>
+            
+         </div>       
+  
+        <button class="btncom" onclick="opFormcom()">COMPLEATE</button>
+        
+             
+  
+          
+      </div>
+  
+  </div>
+    </div>
+  </div>
+
+  <div class="form-popupcom" id="myFormcom">
+  <form action="/action_page.php" class="containercom">
+    
+     <div >
+     <button class="close-btn fas fa-times" onclick="clFormcom()"></button>
+          
+            <div class="part1com">
+                <div class="form-elementcom">
+                    <span class="details"><p>project type*</p></span>
+                    <input class="inp" type="text"placeholder=""required>
+                </div>
+                <div class="form-elementcom">
+                    <span class="details"><p>project title*</p></span>
+                    <input class="inp" type="text"placeholder=""required>
+                </div>
+                <div class="form-elementcom">
+                    <span class="details"><p>project cost*</p></span>
+                    <input class="inp" type="text"placeholder=""required>
+                </div>
+            </div>
+            <div class="part2com">
+                <p>project description</p>
+                <br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex a odit aut omnis excepturi? Aspernatur, atque vitae. Minus aliquid possimus animi deleniti optio dicta ipsum repudiandae quia quod ad quo recusandae, nam modi iusto accusamus! Iusto officiis laudantium necessitatibus modi autem corporis dolor labore, maiores animi, aut explicabo architecto pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, ipsum?
+            </div>
+            <div class="form-elementcom">
+                <span class="details"><p>please provide a review:for showcasing:</p></span>
+                <input class="feedback" type="text"placeholder=""required>
+            </div>
+            <button class="btnsub" onclick="opFormcom()">Submit</button>
+        </form>
+    </div>
+ </div>
+
+</body>
+
+<!--footer part starts here ............footer part starts here ............footer part starts here ............-->
+<footer class="footer">
+  	 <div class="container1">
+  	 	<div class="row1">
+			<div class="footer-col">
+				<img src="images/logow.svg" alt="logo cc">
+			</div>
+  	 		<div class="footer-col">
+  	 			<h4>help</h4>
+  	 			<ul class="f">
+  	 				<li class="p"><a href="#">help center</a></li>
+  	 				<li class="p"><a href="#">authors</a></li>
+  	 				<li class="p"><a href="#">trust & safety</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>about</h4>
+  	 			<ul class="f">
+  	 				<li class="p"><a href="#">about us</a></li>
+  	 				<li class="p"><a href="#">how it works</a></li>
+  	 				<li class="p"><a href="#">security</a></li>
+  	 				<li class="p"><a href="#">investor</a></li>
+  	 				<li class="p"><a href="#">quotes</a></li>
+  	 				<li class="p"><a href="#">news</a></li>
+
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>terms</h4>
+  	 			<ul class="f">
+  	 				<li class="p"><a href="#">privacy policy</a></li>
+  	 				<li class="p"><a href="#">terms of service</a></li>
+  	 				<li class="p"><a href="#">copyright policy</a></li>
+  	 				<li class="p"><a href="#">trade mark</a></li>
+  	 			</ul>
+  	 		</div>
+			   <div class="footer-col">
+				   <h4>f&q</h4>
+				   <ul class="f">
+					   <li class="p"><a href="#">How it works?</a></li>
+					   <li class="p"><a href="#">What is the ordering process?</a></li>
+					   <li class="p"><a href="#">Ask a question</a></li>
+					</ul>
+			   </div>
+  	 	</div>
+		<div class="row2">
+			<div class="col1">
+				<p style="color: white;">&#169 Cloud Company 2021</p>
+			</div>
+	
+		 <div class="col1">
+			<div class="social-links">
+			 <a href="#"><i class="fab fa-instagram"></i></a>
+			 <a href="#"><i class="fab fa-facebook-f"></i></a>
+			 <a href="#"><i class="fab fa-youtube"></i></a>
+			 <a href="#"><i class="fab fa-pinterest-p"></i></a>
+		    </div>
+		</div>
+	  </div>
+  	</div>
+   <!--chat button starts here  -->
+    <button class="open-buttonc" onclick="opForm()">Chat</button>
+ <div class="chat-popup1" id="myFormc">
+  <div class="ccontainerc">
+    <div class="cheader">
+        <p style="margin: 0px;">dkljsdfljdflkjdflk</p>
+        <button type="button" class="cancelc" onclick="clForm()">Close</button>
+    </div>
+   <div class="chatarea">
+      <div class="containerc"> 
+        <p>Hello. How are you today?</p>
+        <span class="time-right">11:00</span>
+      </div>
+      
+      <div class="containerc darkerc"> 
+        <p>Hey! I'm fine. Thanks for asking!</p>
+        <span class="time-left">11:01</span>
+      </div>
+      <div class="containerc darkerc"> 
+        <p>Hey! I'm fine. Thanks for asking!</p>
+        <span class="time-left">11:01</span>
+      </div>
+      <div class="containerc darkerc"> 
+        <p>Hey! I'm fine. Thanks for asking!</p>
+        <span class="time-left">11:01</span>
+      </div>
+     
+      <div class="containerc darkerc"> 
+        <p>Hey! I'm fine. Thanks for asking!</p>
+        <span class="time-left">11:01</span>
+      </div>
+      
+      <div class="containerc">
+     <p>Sweet! So, what do you wanna do today?</p>
+        <span class="time-right">11:02</span>
+      </div>
+      
+      <div class="containerc darkerc">   
+        <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+        <span class="time-left">11:05</span>
+      </div>
+   </div>
+      <div class="cheader">
+        <textarea placeholder="Type message.." name="msg" required class="textareac"></textarea>
+     
+        <button type="submit" class="btnc">Send</button>
+        
+
+          </div>
+      </div>
+   </div>
+ </div> 
+  </footer>
+
+   
+    
+
+
+
+
+
+
+<script>
+    function opForm() {
+      document.getElementById("myFormc").style.display = "block";
+    }
+    
+    function clForm() {
+      document.getElementById("myFormc").style.display = "none";
+    }
+    function openForm() {
+      document.getElementById("myForms").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForms").style.display = "none";
+    }
+
+    function opFormcom() {
+      document.getElementById("myFormcom").style.display = "block";
+    }
+    
+    function clFormcom() {
+      document.getElementById("myFormcom").style.display = "none";
+    }
+    
+
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+        var cd5 = new Countdown({
+            cont: document.querySelector('.container5'),
+            date: Date.now() + 86400,
+            outputTranslation: {
+                year: 'Years',
+                week: 'Weeks',
+                day: 'Days',
+                hour: 'Hours',
+                minute: 'Minutes',
+                second: 'Seconds',
+            },
+            endCallback: function () {
+                document.querySelector('.container5').insertAdjacentHTML(
+                    'beforeend', 
+                    '<div style="display: flex;height: 50px;align-items: center;justify-content: center;background: red;font-weight: bold;">time UP </div>')
+            },
+            outputFormat: 'week|day|hour|minute|second',
+        });
+        cd5.start();
+  
+
+
+</script>
+
+
+</body>
+</html>
+ 

@@ -3,7 +3,7 @@
 <div id="navbar">  
     <a><button class="signin" onclick="openlForm()" >login</button></a>     
   <a href="show.php">Showcase</a>
-  <a href="#" href="javascript:void(0)">Who we are </a>
+  <a href="wwr.php" href="javascript:void(0)">Who we are </a>
   <a href="javascript:void(0)">Terms and Conditions </a>
   <a href="placeorder.php">Place an Order</a>
   <a><button class="signin" onclick="openForm()" >Sign up</button></a>

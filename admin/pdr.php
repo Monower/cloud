@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <link rel="stylesheet" href="../m.css">
+  <link rel="stylesheet" href="../css/n.css">
   <link rel="stylesheet" href="ad.css">
 <header>
 

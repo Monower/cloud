@@ -1,301 +1,296 @@
 * {
     box-sizing: border-box;
-  }
-  
-  *{
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-  }
-  .grid-container{
+}
+
+.grid-container {
     width: 250px;
     background: rgb(191 206 230);
-  }
-  
-  
-  .grid-container .side1{
+}
+
+.grid-container .side1 {
     width: 250px;
-  }
-  .grid-container .item{
-  background-color: #8dc5f3;
-  background-position: left top;
-  background-repeat: repeat;
-  border-color: #b2b2fb;
-  padding: 20px; 
-  width: 250px;
-  height: 50px;  
-  }
-  
-  .item:hover:not(.active) {
+}
+
+.grid-container .item {
+    background-color: #8dc5f3;
+    background-position: left top;
+    background-repeat: repeat;
+    border-color: #b2b2fb;
+    padding: 20px;
+    width: 250px;
+    height: 50px;
+}
+
+.item:hover:not(.active) {
     background-color: rgb(135, 46, 250);
     color: white;
-  }
-  .item a{
-      font-size: 16px;
-      text-transform: capitalize;
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 300;
-      color: black;
-      display: block;
-      transition: all 0.3s;
-      text-align: center;
-    }
-    .grid-container .side2{
-      width: 50%;
-      padding: 45px 5px;
-    }
-    .grid-container .side2 .item{
-      
-      background-color: #eaf2f8;
-      border-style: ridge;
-      background-position: left top;
-      background-repeat: repeat;
-      border-color: #e0e0f8;
-      margin-left: 40px;
-      width: 150px;
-      height: 50px;  
-      }
-      
-      p{
-        width:140px;
-        padding:5px;
-        font-weight: bold;
-        font-family: sans-serif;
-      }
-  /* Create two unequal columns that floats next to each other */
-  .columnad {
+}
+
+.item a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: black;
+    display: block;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.grid-container .side2 {
+    width: 50%;
+    padding: 45px 5px;
+}
+
+.grid-container .side2 .item {
+    background-color: #eaf2f8;
+    border-style: ridge;
+    background-position: left top;
+    background-repeat: repeat;
+    border-color: #e0e0f8;
+    margin-left: 40px;
+    width: 150px;
+    height: 50px;
+}
+
+p {
+    width: 140px;
+    padding: 5px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+
+.columnad {
     float: left;
-  
-   /* Should be removed. Only for demonstration */
-  }
-  
-  .leftad {
+    /* Should be removed. Only for demonstration */
+}
+
+.leftad {
     width: 250px;
-    float:left;
-    
-  }
-  .rightad{
-      width:auto;
-      height: 560px;
-      overflow-y: scroll;
-  }
-  
-  
-  /* Clear floats after the columns */
-  .rowad:after {
+    float: left;
+}
+
+.rightad {
+    width: auto;
+    height: 560px;
+    overflow-y: scroll;
+}
+
+
+/* Clear floats after the columns */
+
+.rowad:after {
     content: "";
     display: table;
     clear: both;
-  }
-  .item.activec{
+}
+
+.item.activec {
     background-color: springgreen;
-  }
-  
-  .containerp{
-          height: 250px;
-      width: 900px;
-      margin: 10px;
-      padding: 15px;
-      border-radius: 20px;
-      box-shadow: 0 0 8px rgb(146 138 138);
-      }
-      form{
-      /* display: flex; */
-      width: 100%;
-     
-  } 
-  .part1{
-      display: flex;
-  }
-  .containerp .text{
-      font-size: 35px;
-      font-weight: 600;
-      text-align: center;
-  }
-  .containerp form .form-element .part1{
-      width: 100%;
-  }
-  .containerp form .form-element{
-      height: 45px;
-      width: 100%;
-  
-  }
-   p{
-      font-style: italic;
-      padding: 4px;
-      color: #0d2a88;
-  }
-  form .form-element label{
-      font-size: 18px;
-  }
-  form .form-element input{
-      height: 60%;
-      width: 80%;
-      border: 1px solid rgb(160, 201, 236);
-  }
-  form .form-element input:focus{
-      border-color: #4abdf3;
-      border-bottom-width: 2px;
-  }
-  .part2{
-      width: 100%;
-      margin:30px 5px;
-  }
-  .clouds{
+}
+
+.containerp {
+    height: 250px;
+    width: 900px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgb(146 138 138);
+}
+
+form {
+    /* display: flex; */
+    width: 100%;
+}
+
+.part1 {
+    display: flex;
+}
+
+.containerp .text {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.containerp form .form-element .part1 {
+    width: 100%;
+}
+
+.containerp form .form-element {
+    height: 45px;
+    width: 100%;
+}
+
+p {
+    font-style: italic;
+    padding: 4px;
+    color: #0d2a88;
+}
+
+form .form-element label {
+    font-size: 18px;
+}
+
+form .form-element input {
+    height: 60%;
+    width: 80%;
+    border: 1px solid rgb(160, 201, 236);
+}
+
+form .form-element input:focus {
+    border-color: #4abdf3;
+    border-bottom-width: 2px;
+}
+
+.part2 {
+    width: 100%;
+    margin: 30px 5px;
+}
+
+.clouds {
     height: 28px;
     width: 200px;
-  }
+}
 
-  * {
+* {
     box-sizing: border-box;
-  }
-  
-  *{
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-  }
-  .grid-container{
+}
+
+.grid-container {
     width: 250px;
     background: rgb(191 206 230);
-  }
-  
-  
-  .grid-container .side1{
+}
+
+.grid-container .side1 {
     width: 250px;
-  }
-  .grid-container .item{
-  background-color: #8dc5f3;
-  background-position: left top;
-  background-repeat: repeat;
-  border-color: #b2b2fb;
-  padding: 20px; 
-  width: 250px;
-  height: 50px;  
-  }
-  
-  .item:hover:not(.active) {
+}
+
+.grid-container .item {
+    background-color: #8dc5f3;
+    background-position: left top;
+    background-repeat: repeat;
+    border-color: #b2b2fb;
+    padding: 20px;
+    width: 250px;
+    height: 50px;
+}
+
+.item:hover:not(.active) {
     background-color: rgb(135, 46, 250);
     color: white;
-  }
-  .item a{
-      font-size: 16px;
-      text-transform: capitalize;
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 300;
-      color: black;
-      display: block;
-      transition: all 0.3s;
-      text-align: center;
-    }
-    .grid-container .side2{
-      width: 50%;
-      padding: 45px 5px;
-    }
-    .grid-container .side2 .item{
-      
-      background-color: #eaf2f8;
-      border-style: ridge;
-      background-position: left top;
-      background-repeat: repeat;
-      border-color: #e0e0f8;
-      margin-left: 40px;
-      width: 150px;
-      height: 50px;  
-      }
-      
-      p{
-        width:140px;
-        padding:5px;
-        font-weight: bold;
-        font-family: sans-serif;
-      }
-  /* Create two unequal columns that floats next to each other */
-  .columnad {
+}
+
+.item a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: black;
+    display: block;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.grid-container .side2 {
+    width: 50%;
+    padding: 45px 5px;
+}
+
+.grid-container .side2 .item {
+    background-color: #eaf2f8;
+    border-style: ridge;
+    background-position: left top;
+    background-repeat: repeat;
+    border-color: #e0e0f8;
+    margin-left: 40px;
+    width: 150px;
+    height: 50px;
+}
+
+p {
+    width: 140px;
+    padding: 5px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+
+.columnad {
     float: left;
-  
-   /* Should be removed. Only for demonstration */
-  }
-  
-  .leftad {
+    /* Should be removed. Only for demonstration */
+}
+
+.leftad {
     width: 250px;
-  }
-  
-  .rightad {
+}
+
+.rightad {
     min-width: 900px;
-    
-  }
-  
-  /* Clear floats after the columns */
-  .rowad:after {
+}
+
+
+/* Clear floats after the columns */
+
+.rowad:after {
     content: "";
     display: table;
     clear: both;
-  }
-  .item.activec{
+}
+
+.item.activec {
     background-color: springgreen;
-  }
-  
-  table.blueTable {
+}
+
+table.blueTable {
     border: 1px solid #1C6EA4;
     background-color: #EEEEEE;
     width: 100%;
     text-align: center;
     border-collapse: collapse;
-  }
-  table.blueTable td, table.blueTable th {
+}
+
+table.blueTable td,
+table.blueTable th {
     border: 1px solid #AAAAAA;
     padding: 3px 2px;
-  }
-  table.blueTable tbody td {
+    height: 20px;
+}
+
+table.blueTable tbody td {
     font-size: 13px;
-  }
-  table.blueTable tr:nth-child(even) {
+    height: 40px;
+}
+
+table.blueTable tr:nth-child(even) {
     background: #D0E4F5;
-  }
-  table.blueTable thead {
-    background: #1C6EA4;
-    background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-    background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-    background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-    border-bottom: 2px solid #444444;
-  }
-  table.blueTable thead th {
-    font-size: 15px;
+}
+
+table.blueTable thead th {
+    font-size: 16px;
     font-weight: bold;
     color: #FFFFFF;
     text-align: center;
-    border-left: 2px solid #D0E4F5;
-  }
-  table.blueTable thead th:first-child {
-    border-left: none;
-  }
-  
-  table.blueTable tfoot {
-    font-size: 14px;
-    font-weight: bold;
-    color: #FFFFFF;
-    background: #D0E4F5;
-    background: -moz-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
-    background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
-    background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
-    border-top: 2px solid #444444;
-  }
-  table.blueTable tfoot td {
-    font-size: 14px;
-  }
-  table.blueTable tfoot .links {
-    text-align: right;
-  }
-  table.blueTable tfoot .links a{
-    display: inline-block;
-    background: #1C6EA4;
-    color: #FFFFFF;
-    padding: 2px 8px;
-    border-radius: 5px;
-  }
-  
+    background-color: black;
+}

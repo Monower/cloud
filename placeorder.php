@@ -5,8 +5,9 @@
   <a href="wwr.php" href="javascript:void(0)">Who we are </a>
   <a href="javascript:void(0)">Terms and Conditions </a>
   <a class="active" href="placeorder.php">Place an Order</a>
+  <a href="blog.php">Blog</a>
   <a><button class="signin" onclick="openForm()" >Sign up</button></a>
-  <a  href="index.php">Home</a>
+  <a  href="ind.php">Home</a>
 
         
   </div>

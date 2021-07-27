@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <link rel="stylesheet" href="css/n.css">
-  
+  <link rel="stylesheet" href="css/s.css">
+  <link rel="icon" 
+       
+      href="images/iconn.png" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
- 
 <header>
 
  <div class="col-md-12 m-3 p-2"  id="nav">

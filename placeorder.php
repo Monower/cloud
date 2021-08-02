@@ -1,4 +1,9 @@
-<?php include 'header.php';?>
+<?php 
+include 'header.php';
+include './db/dbconnect.php';
+$conn=$obj1->open();
+
+?>
 <div id="navbar">  
     <a><button class="signin" onclick="openlForm()" >login</button></a>     
   <a href="show.php">Showcase</a>
@@ -16,65 +21,82 @@
     <div class="order form">
 	
     <div class="containerp">
-      <form action="#">
+      <form action="./process/sub_cat.php">
+        Name<span style="color: red">*</span>: <input type="text" name="name" placeholder="Enter name" required><br>
+        Email<span style="color: red">*</span>: <input type="email" name="mail" placeholder="Enter name" required><br>
+        Phone/WhatsApp<span style="color: red">*</span>: <input type="tel" name="phn" placeholder="Enter number" required><br>
         <div class="project-details">
           <div class="blueTable">
                <div class="divTableBody">
               <div class="divTableRow">
                   <div class="divTableCell"><div class="input-box">
-            <span class="details">project catagory*</span>
+                    
+            <span class="details">project catagory<span style="color: red">*</span></span>
             <br>
             <select name="" id="no">
-              <option value="1"></option>
-              <option value="2">SEO service </option>
+              <option value="0"></option>
+<!--               <option value="2">SEO service </option>
               <option value="3">Graphics design</option>
               <option value="4">Logo Design</option>
               <option value="5">Social Media Marketing </option>
               <option value="6">banner design</option>
-              <option value="7">website development</option>
-              <option value="8">11</option>
-              <option value="9">12</option>
-              <option value="10">13</option>
+              <option value="7">website development</option> -->
+              <?php 
+                  $sql="SELECT * FROM categories";
+
+                  $result=$conn->query($sql);
+                  if ($result==true) {
+                    while($row=$result->fetch_assoc()){
+                      ?>
+                        <option value="<?php echo $row['id']; ?>"><?php echo $row['name']; ?></option>
+                      <?php
+                    }
+                  }
+              
+              ?>
+
             </select>
           </div></div>
                   <div class="divTableCell"><div class="input-box">
-            <span class="details">Subcatagory*</span>
+            <span class="details">Subcatagory<span style="color: red">*</span></span>
             <br>
-            <select name="" id="no">
-              <option value="1"></option>
+            <select name="" id="no1">
+<!--               <option value="1"></option>
               <option value="2">SEO service </option>
               <option value="3">Graphics design</option>
               <option value="4">Logo Design</option>
               <option value="5">Social Media Marketing </option>
               <option value="6">banner design</option>
-              <option value="7">website development</option>
-              <option value="8">11</option>
-              <option value="9">12</option>
-              <option value="10">13</option>
+              <option value="7">website development</option> -->
+
             </select>
           </div>
-         </div><div class="divTableCell"><div class="input-box">
+         </div>
+         <div class="divTableCell">
+           <div class="input-box">
             <span class="details">estimated time</span><button>express</button>
          
             <br>          
-            <input type="text"placeholder=""required>
-            </div>   </div>   
+            <input type="text"placeholder="est">
+            </div>  
+           </div>   
                 </div>
                 <div class="divTableRow">
                   <div class="divTableCell"> <div class="input-box">
-            <span class="details">Project Tital</span>
+            <span class="details">Project Title<span style="color: red">*</span></span>
             <br>
             <input type="text"placeholder="e.g.logo design for resturant"required>
-          </div></div>
+          </div>
+        </div>
                   <div class="divTableCell"><div class="input-box">
             <span class="details">project cost</span>
             <br>
-            <input type="text" placeholder="autofilL from database"required>
+            <input type="text" placeholder="autofilL from database" readonly>
           </div></div>
           <div class="divTableCell">  <div class="input-box">
             <span class="details">discount code</span><button>apply</button>
             <br>
-            <input type="text"placeholder="e.g.logo design for resturant"required>
+            <input type="text"placeholder="e.g.logo design for resturant">
           </div></div>
                   
                 </div>
@@ -112,6 +134,27 @@
       <tr><td></td><td></td><td>PENDING COST</td><td>Cost</td></tr>
   </table>
  </div>   
+
+ <script>
+   let a=$('#no').change(function(){
+     var id=$(this).children("option:selected").val();
+     $.ajax({
+       type: 'POST',
+       url: './process/sub_cat.php',
+       data: {id: id},
+       success: function(data){
+          let a=JSON.parse(data);
+          let output='';
+
+          for(var i in a){
+            output+=`<option value="${a[i].sub_category}">${a[i].sub_category}</option>`;
+          }
+          $('#no1').html(output);
+       }
+     })
+   })
+   
+ </script>
  </body>
  
 <!--footer part starts here ............footer part starts here ............footer part starts here ............-->

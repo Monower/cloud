@@ -100,6 +100,15 @@ Categories:
 Sub-categories with all details:
 <div id="addsubcat" style="display: none">
 ADD NEW SUB-CATEGORY with DETAILS:
+<form id="add_sub_cat_form">
+  Parent ID: <input type="number">
+  Name of Subcategory: <input type="text">
+  Estimated Time: <input type="text">
+  Project Cost: <input type="number">
+  Express Delivery Time: <input type="text">
+  Express Delivery Cost: <input type="number">
+  Cloud Skill: <input type="text">
+</form>
 </div>
 <table>
   <thead>

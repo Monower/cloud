@@ -1,0 +1,517 @@
+@media screen and (min-width:0px) and (max-width: 450px) {
+    .mobiled {
+        background-color: white;
+        display: contents;
+    }
+    /* place order starts here ,, place order starts here */
+    .form .project-details {
+        margin: 20px 0 12px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .plob {
+        background-color: white;
+        display: flex;
+    }
+    .plob button {
+        background-color: cornflowerblue;
+        border: blue;
+        width: 30%;
+    }
+    .divTableCell {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .containerp {
+        height: auto;
+        width: 97%;
+        /* margin: 0 auto; */
+        /* padding: 15px; */
+        display: flex;
+        margin: 65px 2px 26px 6px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 0 8px rgb(146 138 138);
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: center;
+    }
+    .input-box2 {
+        height: 200px;
+        width: 100%;
+    }
+    .textareafc {
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        /* box-sizing: border-box; */
+        border: 2px solid #006aff;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+    }
+    .divTableRow {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        margin: 2px;
+        padding: 7px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-color: white;
+    }
+    /*/  cloud profile starts here  cloud profile starts here cloud profile starts here cloud profile starts here */
+    .paymentbox {
+        margin: 5px;
+        justify-content: 5px;
+        align-self: center;
+        background-color: #ffffff;
+        padding: 4px 4px;
+        border-radius: 10px;
+    }
+    #clockdiv {
+        font-family: sans-serif;
+        color: #fff;
+        display: inline-block;
+        font-weight: 100;
+        text-align: center;
+        font-size: 27px;
+        width: 100%;
+    }
+    #clockdiv>div {
+        padding: 13px;
+        /* width: 100%; */
+        border-radius: 11px;
+        background: #00BEFA;
+        display: inline-block;
+    }
+    #clockdiv div>span {
+        padding: 4px;
+        border-radius: 2px;
+        background: white;
+        display: inline-block;
+        color: black;
+    }
+    .smalltext {
+        padding-top: 3px;
+        font-size: 10px;
+        /* width: 12px; */
+    }
+    .all {
+        margin: 0px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .rowad {
+        display: flex;
+        clear: both;
+        background-color: white;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+    .leftside {
+        /* padding-top: 61px; */
+        background-color: white;
+        display: flex;
+        /* padding: 13px; */
+        /* width: fit-content; */
+        /* margin: 10px; */
+        width: 96%;
+        margin-top: 69px;
+    }
+    .rightside {
+        background-color: white;
+        display: flex;
+        padding: 10px;
+        width: fit-content;
+        /* margin: 10px; */
+        width: 96%;
+        flex-direction: column;
+        /* align-content: space-around; */
+        margin-bottom: 50px;
+    }
+    .ordertop {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        /* background-color: white; */
+        align-items: center;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+    .orderboxtop {
+        display: flex;
+        flex-direction: column;
+    }
+    .orderboxdrop {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .orderboxdrop textarea {
+        width: 100%;
+        border-color: rgb(0, 106, 255);
+        height: 220px;
+        margin: 4px;
+        /* padding: 2px; */
+        /* height: fit-content; */
+    }
+    .container5 {
+        width: 100%;
+        background-color: rgb(255, 0, 0);
+    }
+    .te {
+        background-color: rgb(255, 255, 255);
+        font-size: 25px;
+        border-radius: 2px;
+        border-color: #02c4ff;
+    }
+    /*/  cloud profile starts here  cloud profile starts here cloud profile starts here cloud profile starts here */
+    .tnav a:not(:first-child),
+    .dropdown .dropbtn {
+        display: none;
+    }
+    .tnav a.icon {
+        float: right;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10px;
+        font-size: 25px;
+    }
+    .tnav.responsive {
+        position: relative;
+        background-color: rgb(255, 0, 0);
+        width: 200px;
+    }
+    .tnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10px;
+        font-size: 25px;
+    }
+    .tnav.responsive a {
+        float: none;
+        /* width: 100%; */
+        display: flex;
+        text-align: left;
+        background-color: rgb(255, 255, 255);
+        align-items: center;
+        align-content: center;
+        flex-direction: row;
+    }
+    .tnav.responsive .dropdown {
+        float: none;
+    }
+    .tnav.responsive .dropdown-content {
+        position: relative;
+    }
+    .tnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    .maingrid {
+        display: grid;
+        background-color: red;
+        grid-template-columns: 0% 100% 0%;
+    }
+    .main {
+        background-color: rgb(235, 235, 255);
+        width: 100%;
+        height: fit-content;
+    }
+    .main h1 {
+        font-size: 25px;
+    }
+    .main h2 {
+        font-size: 10px;
+        font-style: italic;
+        color: #9eb3bd;
+    }
+    .main p {
+        font-size: 15px;
+    }
+    .sidemainl {
+        background-color: rgb(235, 235, 255);
+    }
+    .iconmain {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .maindetaill {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .maindetailr {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        align-content: flex-end;
+        text-align: end;
+    }
+    .sidemainr {
+        background-color: rgb(255, 255, 255);
+    }
+    .subcardl {
+        padding: 10px;
+        background-color: #ffffff;
+        width: 100%;
+        height: fit-content;
+        border-radius: 15px;
+        display: grid;
+        grid-template-rows: 50% 50%;
+    }
+    .subcardr {
+        padding: 10px;
+        background-color: #ffffff;
+        width: 100%;
+        height: fit-content;
+        border-radius: 15px;
+        display: grid;
+        grid-template-rows: 50% 50%;
+    }
+    .maindetails {
+        padding: 50px;
+        background-color: #ffffff;
+        width: 100%;
+        height: 400px;
+        border-radius: 15px;
+        display: grid;
+        margin: 30px 0px;
+    }
+    .maindetails2 {
+        padding: 50px;
+        background-color: #ffffff;
+        width: 100%;
+        height: 400px;
+        border-radius: 15px;
+        display: grid;
+        margin: 30px 0px;
+    }
+    .maindetails h1 p {
+        display: flex;
+        font-size: 70px;
+        background: linear-gradient(to right, #02c4ff 0%, #0111ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: rgba(0, 0, 205, 0.699);
+        text-align: right;
+        flex-direction: column;
+    }
+    .maindetails2 h1 p {
+        display: flex;
+        font-size: 70px;
+        background: linear-gradient(to right, #f702ff 0%, #2701ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: rgba(0, 0, 205, 0.699);
+        text-align: left;
+        flex-direction: column;
+    }
+    #mylogin .login-containerl {
+        height: 400px;
+        max-width: 300px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 20px;
+    }
+    /* Full-width input fields */
+    .form-container input[type=text],
+    .form-container input[type=password] {
+        width: 100%;
+        padding: 2px;
+        font-size: 20px;
+        border: none;
+        background: #f1f1f1;
+    }
+    .chat-popup1 {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        right: 15px;
+        border: 3px solid #f1f1f1;
+        z-index: 9;
+    }
+    .ccontainerc {
+        width: 280px;
+        background-color: rgb(199, 188, 252);
+    }
+    .chatarea {
+        overflow-y: scroll;
+        height: 300px;
+        width: 395px;
+    }
+    /* login form starts here  login form starts here login form starts here login form starts here login form starts here */
+    .form-popuploginc {
+        display: none;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        /* box-shadow: 0 0 8px rgb(146, 138, 138); */
+    }
+    .cancellog {
+        background-color: rgb(151, 84, 252);
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100px;
+        margin-top: 10px;
+        float: right;
+    }
+    .login-containerlc {
+        padding: 80px 20px;
+        background-color: white;
+        border-radius: 20px;
+        height: 100%;
+        width: 100%;
+    }
+    .form-elementlog {
+        height: 45px;
+        width: 100%;
+    }
+    .log {
+        width: 280px;
+        height: 35px;
+    }
+    /* login form starts here  login form starts here login form starts here login form starts here login form starts here */
+    .form-popup {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        border-radius: 20px;
+        box-shadow: 0 0 8px rgb(146 138 138);
+        background-color: white;
+    }
+    .form-container {
+        height: 100%;
+        width: 100%;
+        padding: 74px 25px;
+        background-color: white;
+        border-radius: 20px;
+    }
+    .form-popuplogin {
+        display: none;
+        height: 100%;
+        position: fixed;
+        border-radius: 20px;
+        box-shadow: 0 0 8px rgb(146, 138, 138);
+    }
+    .lfooter {
+        background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 58));
+        border-radius: 5px 5px 0px 0px;
+        height: 40px;
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+    }
+    .lfooter button {
+        background-color: rgb(0, 0, 58);
+        height: 40px;
+        width: 19%;
+        border: none;
+        border-radius: 0px;
+    }
+    .lfooter button img {
+        width: 20px;
+    }
+    .headd {
+        width: 100%;
+        height: 56px;
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        top: 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+        align-content: stretch;
+        justify-content: space-between;
+    }
+    .peta img {
+        width: 110px;
+        padding: 5px 0px 1px 8px;
+    }
+    .chata img {
+        width: 43px;
+        padding: 9px 16px 3px 2px;
+    }
+    .blogg {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        background-color: rgb(235, 235, 255);
+    }
+    .lowerblog {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        padding: 5px;
+        margin: 5px;
+    }
+    .topblog {
+        background-color: white;
+        padding: 5px;
+        margin: 5px;
+        width: 100%;
+    }
+    .blogcard {
+        height: fit fit-content;
+        background-color: #ffffff;
+        margin: 5px;
+        border: solid 2px #d4d4d4;
+    }
+    .blogcard img {
+        width: 100%;
+    }
+    .blogcard h1 {
+        font-size: 25px;
+    }
+    .blogcard p {
+        font-size: 15px;
+        font-style: bold;
+        margin: 5px;
+    }
+    .topblog img {
+        width: 100%;
+    }
+    .topblog h1 {
+        font-size: 25px;
+    }
+    .topblog p {
+        font-size: 20px;
+    }
+    .rowi {
+        margin: 0px 0%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        justify-content: space-around;
+    }
+    .cardi {
+        background-color: rgb(255, 255, 255);
+        width: 47%;
+        height: fit-content;
+        align-self: center;
+        margin: 5px 2px;
+        text-align: center;
+        font-family: arial;
+        font-size: 22px;
+        border: solid 1px rgb(175, 173, 173)
+    }
+}

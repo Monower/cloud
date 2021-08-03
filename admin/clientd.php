@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="ad.css">
+  <link rel="stylesheet" href="ads.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
@@ -13,26 +13,32 @@
   <div class="columnad leftad" >
     <div class="grid-container left">
     <div class="side1">
-        <div class="item">
-          <a  href="pdr.php">Project Distributor</a>
-        </div>
-          <div class="item">
-          <a href="md.php">Money Distribution</a>
-          </div>
-       <div class="item activec">
-          <a href="clientd.php">Client Details</a>
-           </div>
+                    <div class="item">
+                        <a href="index.html">Index</a>
+                    </div>
+                    <div class="item">
+                        <a href="pd.php">Project Distribution</a>
+                         </div>
+                    <div class="item">
+                        <a href="pdr.php">Project Distributor</a>
+                    </div>
+                    <div class="item">
+                        <a href="md.php">Money Distribution</a>
+                    </div>
+                    <div class="item activec">
+                        <a href="clientd.php">Client Details</a>
+                    </div>
 
-              <div class="item ">
-         <a href="cc.php">Cloud Details</a>
-          </div>
-          <div class="item">
-            <a href="ptc.php">project type and Cost</a>
-             </div>
-             <div class="item">
-                <a href="cf.php">Chat Filter </a>
-                 </div>
-       </div>
+                    <div class="item">
+                        <a href="cc.php">Registered Cloud Details</a>
+                    </div>
+                    <div class="item">
+                        <a href="ptc.php">project type and Cost</a>
+                    </div>
+                    <div class="item">
+                        <a href="cf.php">Chat Filter </a>
+                    </div>
+                </div>
    
     <div class="side2">
           <p>Website View</p>

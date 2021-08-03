@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <link rel="stylesheet" href="css/s.css">
+<script src="countDown.min.js"></script>
+<link href="css/count.css" media="all" rel="stylesheet" />
+  <link rel="stylesheet" href="css/pc7.css">
+  <link rel="stylesheet" href="css/mo6.css">
+  <link rel="stylesheet" href="css/mobcount1.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" 
-       
-      href="images/iconn.png" />
+      href="images/iconn.png"/>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <header>
 
- <div class="col-md-12 m-3 p-2"  id="nav">
-               
+ <div class="logogg">        
                <a href="in.html"><img src="images/logo.svg" class="topleft" width="200px"></a>    
  </div>
-            
-        
+      
  
 <div class="form-popuploginc" id="mylogin">
     <form action="/action_page.php" class="login-containerlc">

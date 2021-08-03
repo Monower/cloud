@@ -1,63 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <link rel="stylesheet" href="../css/n.css">
-  <link rel="stylesheet" href="ad.css">
+  <link rel="stylesheet" href="../css/pc6.css">
+  <link rel="stylesheet" href="ads.css">
 <header>
+     
 
- <div class="col-md-12 m-3 p-2"  id="nav">
-               
-               <a href="in.php"><img src="../images/logo.svg" class="topleft" width="200px"></a>    
- </div>
-            
-        
- <div id="navbar">
-<div class="login-container">
-    <form action="/action_page.php">
-      
-      <button type="submit">Logout</button>
-    </form>
-</div>        
 
-  <a href="show.php">Showcase</a>
-  <a href="wwr.php" href="javascript:void(0)">Who we are </a>
-  <a href="javascript:void(0)">Terms and Conditions </a>
-  <a href="placeorder.php">Place an Order</a>
-  <a><button class="signin" onclick="openForm()" >Sign up</button></a>
-  <a class="active" href="javascript:void(0)">Home</a>
-
-        </div>
-  </div>
- <div class="form-popup" id="myForms">
-     <form action="/action_page.php" class="form-container">
-     <h1>Login</h1>
-     <div class="form-element">
-        <label>Name</label>
-        <input type="text"required>
-     </div>
-     <div class="form-element">
-     <label>Email</label>
-     <input type="text"required>
-     </div>
-    <div class="form-element">
-    <table><tr><td> <label>Country</label>
-     <input type="text"required></td><td><label>City</label><input type="text"required></td></tr></table>
-    </div>
-    <div class="form-element">
-     <label>phone</label>
-     <input type="text"required>
-     </div>
-      <div>
-    <table>
-      <tr><td style="text-align:center"><button type="submit" class="btns">Login</button></td><td>
-    <button type="button" class="btns cancel" onclick="closeForm()">Close</button></td>
-     </tr>
-    </table>
-  </div>
-
-  
-  </form>
- </div>
 <!--body part starts here ............body part starts here ............body part starts here ............-->
 <body>
 
@@ -66,29 +15,34 @@
 <div class="rowad">
   <div class="columnad leftad" >
     <div class="grid-container left">
-      <div class="side1">
-        <div class="item activec">
-          <a  href="pdr.php">Project Distributor</a>
-        </div>
-          <div class="item">
-          <a href="md.php">Money Distribution</a>
-          </div>
-       <div class="item">
-          <a href="clientd.php">Client Details</a>
-           </div>
+    <div class="side1">
+                    <div class="item">
+                        <a href="index.html">Index</a>
+                    </div>
+                    <div class="item">
+                        <a href="pd.php">Project Distribution</a>
+                    </div>
+                    <div class="item activec">
+                        <a href="pdr.php">Project Distributor</a>
+                    </div>
+                    <div class="item">
+                        <a href="md.php">Money Distribution</a>
+                    </div>
+                    <div class="item">
+                        <a href="clientd.php">Client Details</a>
+                    </div>
 
-              <div class="item">
-         <a href="cc.php">Cloud Details</a>
-          </div>
-          <div class="item">
-            <a href="ptc.php">project type and Cost</a>
-             </div>
-             <div class="item">
-                <a href="cf.php">Chat Filter </a>
-                 </div>
-       </div>
+                    <div class="item">
+                        <a href="cc.php">Registered Cloud Details</a>
+                    </div>
+                    <div class="item">
+                        <a href="ptc.php">project type and Cost</a>
+                    </div>
+                    <div class="item">
+                        <a href="cf.php">Chat Filter </a>
+                    </div>
+                </div>
 
-   
     <div class="side2">
           <p>Website View</p>
            <div class="item">

@@ -101,13 +101,15 @@ Sub-categories with all details:
 <div id="addsubcat" style="display: none">
 ADD NEW SUB-CATEGORY with DETAILS:
 <form id="add_sub_cat_form">
-  Parent ID: <input type="number">
-  Name of Subcategory: <input type="text">
-  Estimated Time: <input type="text">
-  Project Cost: <input type="number">
-  Express Delivery Time: <input type="text">
-  Express Delivery Cost: <input type="number">
-  Cloud Skill: <input type="text">
+  Parent ID: <input type="number"><br>
+  Name of Subcategory: <input type="text"><br>
+  Estimated Time: <input type="text"><br>
+  Project Cost: <input type="number" min="600"><br>
+  Express Delivery Time: <input type="text"><br>
+  Express Delivery Cost: <input type="number"><br>
+  Cloud Skill: <input type="text"><br>
+  <input type="submit" value="submit">
+  <button id="id1">cancel</button>
 </form>
 </div>
 <table>
@@ -191,6 +193,9 @@ ADD NEW SUB-CATEGORY with DETAILS:
       // add sub category
       $('#addsubcat_btn').click(function(){
         $("#addsubcat").css('display','block');
+      })
+      $('#id1').click(function(){
+        
       })
   })
 </script>

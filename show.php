@@ -1,4 +1,5 @@
 <?php include 'header.php';?>
+<title>Showcase</title>
 <div id="navbar">  
     <a><button class="signin" onclick="openlForm()" >login</button></a>     
   <a class="active" href="show.php">Showcase</a>
@@ -7,7 +8,7 @@
   <a href="placeorder.php">Place an Order</a>
   <a href="blog.php">Blog</a>
   <a><button class="signin" onclick="openForm()" >Sign up</button></a>
-  <a  href="ind.php">Home</a>
+  <a  href="index.php">Home</a>
 
         
   </div>

@@ -9,6 +9,14 @@
     font-family: sans-serif;
 }
 
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url('http://garudapr.in/wp-content/uploads/2017/12/loader.gif') no-repeat center center;
+    z-index: 99999;
+}
+
 .grid-container {
     width: 250px;
     background: rgb(191 206 230);
@@ -16,6 +24,7 @@
 
 .grid-container .side1 {
     width: 250px;
+    height: 1000px;
 }
 
 .grid-container .item {
@@ -293,4 +302,64 @@ table.blueTable thead th {
     color: #FFFFFF;
     text-align: center;
     background-color: black;
+}
+
+.tableadds {
+    width: 1000px;
+    resize: none;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tableadds .adadad {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    resize: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.bird {
+    width: 250px;
+    height: fit-content;
+    background-color: rgb(255, 253, 253);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    border: solid 4px black;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.label {
+    font-size: 50px;
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.ammount textarea {
+    width: 200px;
+    font-size: 80px;
+    resize: none;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.columnadrightadd {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
 }

@@ -1,3 +1,33 @@
+
+<div class="mobfooter">
+<div class="headd">
+     <div class="peta">
+        <img src="images/logo.svg" >
+</div>
+   <div class="chata">
+   <div class="tnav" id="Mtn">
+     <a  onclick="openlForm()"><img src="images/mob/logd.svg" >log in</a>
+     <a href="#about"><img src="images/mob/abusd.svg" >About Us</a>
+     <a href="#home" ><img src="images/mob/s$p.svg" >services and Costs</a>
+     <a href="#news"><img src="images/mob/t&c.svg" >terms and conditions</a>
+ 
+     
+ 
+  <a href="javascript:void(0);"  class="icon" onclick="myfn()">&#9776;</a>
+</div>
+   </div>
+</div> 
+<div class="lfooter">
+<button id="moba"><img src="images/mob/scase.svg" ></button>
+<button id="mobb"><img src="images/mob/blo.svg" ></button>
+<button id="mobc"><img src="images/mob/homei.svg" ></button>
+<button onclick="openForm()"><img src="images/mob/sign.svg" ></button>
+<button  ><img src="images/mob/chatt.svg" ></button>
+</div>
+</div>
+
+
+</body>
 <footer class="footer">
   	 <div class="container1">
   	 	<div class="row1">
@@ -115,7 +145,33 @@
     
 
 
+  <script>
+    function myfn() {
+     var x = document.getElementById("Mtn");
+    if (x.className === "tnav") {
+    x.className += " responsive";
+    } else {
+    x.className = "tnav";
+   }
+ }
+</script>
 
+<script type="text/javascript">
+    document.getElementById("moba").onclick = function () {
+        location.href = "show.php";
+    };
+    document.getElementById("mobb").onclick = function () {
+        location.href = "blog.php";
+    };
+    document.getElementById("mobc").onclick = function () {
+        location.href = "index.php";
+    };
+    document.getElementById("mobd").onclick = openForm() ;
+       
+    document.getElementById("mobe").onclick = function () {
+        location.href = "show.php";
+    };
+</script>
 
 
 
@@ -158,7 +214,90 @@ function myFunction() {
   }
 }
 </script>
+<script>
 
+
+
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+        var cd5 = new Countdown({
+            cont: document.querySelector('.container5'),
+            date: Date.now() + 86400,
+            outputTranslation: {
+                year: 'Years',
+                week: 'Weeks',
+                day: 'Days',
+                hour: 'Hours',
+                minute: 'Minutes',
+                second: 'Seconds',
+            },
+            endCallback: function() {
+                document.querySelector('.container5').insertAdjacentHTML(
+                    'beforeend',
+                    '<div style="display: flex;height: 50px;align-items: center;justify-content: center;background: red;font-weight: bold;">time UP </div>')
+            },
+            outputFormat: 'week|day|hour|minute|second',
+        });
+        cd5.start();
+    </script>`
+        <script>
+    function getTimeRemaining(endtime) {
+  const total = Date.parse(endtime) - Date.parse(new Date());
+  const seconds = Math.floor((total / 1000) % 60);
+  const minutes = Math.floor((total / 1000 / 60) % 60);
+  const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+  const days = Math.floor(total / (1000 * 60 * 60 * 24));
+  
+  return {
+    total,
+    days,
+    hours,
+    minutes,
+    seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  const clock = document.getElementById(id);
+  const daysSpan = clock.querySelector('.days');
+  const hoursSpan = clock.querySelector('.hours');
+  const minutesSpan = clock.querySelector('.minutes');
+  const secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    const t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  const timeinterval = setInterval(updateClock, 1000);
+}
+
+const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+initializeClock('clockdiv', deadline);
+
+    </script>
 
 </body>
 </html>

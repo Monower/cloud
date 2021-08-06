@@ -153,7 +153,12 @@ ADD NEW SUB-CATEGORY with DETAILS:
                                     <td><form action="../process/update_sub_cat.php" method="post"><input type="hidden" name="id" value="<?php echo $row2['id']; ?>">
                                       <input type="submit" value="edit">
                                         </form>
-                                        <button>Delete</button></td>
+                                        <form action="../process/del_sub_cat.php" method="post">
+                                          <input type="hidden" name="id" value="<?php echo $row2['id']; ?>">
+                                          <input type="submit" value="delete">
+                                        
+                                        </form>
+                                      </td>
                               
                                 </tr>
 

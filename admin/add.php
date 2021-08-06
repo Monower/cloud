@@ -101,13 +101,13 @@ Sub-categories with all details:
 <div id="addsubcat" style="display: none">
 ADD NEW SUB-CATEGORY with DETAILS:
 <form id="add_sub_cat_form">
-  Parent ID: <input type="number"><br>
-  Name of Subcategory: <input type="text"><br>
-  Estimated Time: <input type="text"><br>
-  Project Cost: <input type="number" min="600"><br>
-  Express Delivery Time: <input type="text"><br>
-  Express Delivery Cost: <input type="number"><br>
-  Cloud Skill: <input type="text"><br>
+  Parent ID<span style="color: red">*</span>: <input id="id2" type="number" required><br>
+  Name of Subcategory<span style="color: red">*</span>: <input id="id3" type="text" required><br>
+  Estimated Time<span style="color: red">*</span>: <input id="id4" type="text" required><br>
+  Project Cost<span style="color: red">*</span>: <input id="id5" type="number" required><br>
+  Express Delivery Time<span style="color: red">*</span>: <input id="id6" type="text" required><br>
+  Express Delivery Cost<span style="color: red">*</span>: <input id="id7" type="number" required><br>
+  Cloud Skill<span style="color: red">*</span>: <input id="id8" type="text" required><br>
   <input type="submit" value="submit">
   <button id="id1">cancel</button>
 </form>
@@ -146,11 +146,14 @@ ADD NEW SUB-CATEGORY with DETAILS:
                                     <td><?php echo $row2['parent_id']; ?></td>
                                     <td><?php echo $row2['sub_category']; ?></td>
                                     <td><?php echo $row2['estimated_time']; ?></td>
-                                    <td><?php echo $row2['project_cost']; ?></td>
+                                    <td><?php echo $row2['project_cost']."$"; ?></td>
                                     <td><?php echo $row3['delivery_time']; ?></td>
-                                    <td><?php echo $row3['delivery_cost']; ?></td>
+                                    <td><?php echo $row3['delivery_cost']."$"; ?></td>
                                     <td><?php echo $row2['cloud_skill']; ?></td>
-                                    <td><button>Edit</button><button>Delete</button></td>
+                                    <td><form action="../process/update_sub_cat.php" method="post"><input type="hidden" name="id" value="<?php echo $row2['id']; ?>">
+                                      <input type="submit" value="edit">
+                                        </form>
+                                        <button>Delete</button></td>
                               
                                 </tr>
 
@@ -194,8 +197,31 @@ ADD NEW SUB-CATEGORY with DETAILS:
       $('#addsubcat_btn').click(function(){
         $("#addsubcat").css('display','block');
       })
+      $('#add_sub_cat_form').submit(function(e){
+        e.preventDefault();
+
+        let pid=$('#id2').val();
+        let nosub=$('#id3').val();
+        let et=$('#id4').val();
+        let pc=$('#id5').val();
+        let edt=$('#id6').val();
+        let edc=$('#id7').val();
+        let cs=$('#id8').val();
+
+        $.ajax({
+          type: 'POST',
+          url: '../process/add_sub_cat.php',
+          data: {parentid: pid,name_ofsub: nosub,est: et,pc: pc,edt: edt, edc: edc, cs:cs},
+          success: function(data){
+            alert(data);
+          }
+        })
+
+
+      })
       $('#id1').click(function(){
-        
+        $('#addsubcat').css('display','none');
+
       })
   })
 </script>

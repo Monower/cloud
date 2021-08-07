@@ -11,7 +11,8 @@
   <a href="javascript:void(0)">Terms and Conditions </a>
   <a href="placeorder.php">Place an Order</a>
   <a href="blog.php">Blog</a>
-  <a><button class="signin" onclick="openForm()">Sign up</button></a>
+  <a><button class="signin" onclick="openForm() , showbox2()">Sign up</button></a>
+ 
   <a class="active" href="javascript:void(0)">Home</a>
 
 

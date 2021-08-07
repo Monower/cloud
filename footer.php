@@ -142,7 +142,21 @@
   </footer>
 
    
-    
+  <script>
+function showbox1() {
+  document.getElementById("box1").style.display = "flex";
+}
+function closebox1() {
+  document.getElementById("box1").style.display = "none";
+}
+
+function showbox2() {
+  document.getElementById("box2").style.display = "flex";
+}
+function closebox2() {
+  document.getElementById("box2").style.display = "none";
+}
+</script> 
 
 
   <script>
@@ -176,7 +190,15 @@
 
 
 <script>
-    function opForm() {
+  
+  function showCase() {
+  document.getElementById("showcaseform").style.display = "block";
+}
+
+function closeshowcase() {
+  document.getElementById("showcaseform").style.display = "none";
+}
+  function opForm() {
       document.getElementById("myFormc").style.display = "block";
     }
     
@@ -294,7 +316,7 @@ function initializeClock(id, endtime) {
   const timeinterval = setInterval(updateClock, 1000);
 }
 
-const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+const deadline = new Date(Date.parse(new Date()) + 10 * 24 * 60 * 60 * 1000);
 initializeClock('clockdiv', deadline);
 
     </script>

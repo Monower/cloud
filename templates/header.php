@@ -19,7 +19,8 @@
  
 <div class="form-popuploginc" id="mylogin">
     <form action="/action_page.php" class="login-containerlc">
-     <h1>Log in</h1>   
+     <h1>Log in</h1>
+     Not Registered? <a href="#" onclick="">Sign Up</a>
      <div class="form-elementlog">
         <label>Username</label>
         <input class="log" type="text"required>

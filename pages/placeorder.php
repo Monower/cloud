@@ -7,18 +7,18 @@ include './db/dbconnect.php';
 $conn=$obj1->open();
 
 ?>
-<div id="navbar">  
-    <a><button class="signin" onclick="openlForm()" >login</button></a>     
-  <a href="show.php">Showcase</a>
-  <a href="wwr.php" href="javascript:void(0)">Who we are </a>
-  <a href="javascript:void(0)">Terms and Conditions </a>
-  <a class="active" href="placeorder.php">Place an Order</a>
+<div id="navbar">
+  <a><button class="signin" onclick="openlForm()">login</button></a>
+  <!-- <a href="javascript:void(0)">Terms and Conditions </a> -->
   <a href="blog.php">Blog</a>
-  <a><button class="signin" onclick="openForm()" >Sign up</button></a>
-  <a  href="index.php">Home</a>
+  <a href="placeorder.php">Place an Order</a>
+  <!-- <a><button class="signin" onclick="openForm()">Sign up</button></a> -->
+  <a href="show.php">Showcase</a>
+  <a href="about.php">About Us </a>
+  <a class="active" href="javascript:void(0)">Home</a>
+</div>
 
-        
-  </div>
+
 <!--body part starts here ............body part starts here ............body part starts here ............-->
 <body>  
     <div class="order form">
@@ -79,7 +79,7 @@ $conn=$obj1->open();
         <div class="input-box">
                     <span class="details">estimated time</span>
                     <div class="plob">
-                    <input type="text"placeholder=""required><button>Express</button>
+                    <input type="text" value="lol" readonly><button>Express</button>
                     </div>  
                     </div>
                   
@@ -88,10 +88,10 @@ $conn=$obj1->open();
                         <div class="divTableRow">
                            <div class="divTableCell">  
                                   <div class="input-box">
-                                  <span class="details">discount code</span>
+<!--                                   <span class="details">discount code</span>
                                   <div class="plob">
-                    <input type="text"placeholder=""required><button>Apply</button>
-                    </div>  
+                                      <input type="text"placeholder=""><button>Apply</button>
+                                  </div>  --> 
                                 </div> 
                                 </div>
                             <div class="divTableCell">
@@ -99,16 +99,16 @@ $conn=$obj1->open();
                                 <span class="details">project cost</span>
                                 
                                   <div class="plob">
-                                    <input type="text" placeholder="autofilL from database"required>
+                                    <input type="text" placeholder="autofilL from database" readonly>
                                   </div>
                                 </div>
                             </div>
                             
                                 <div class="divTableCell"> 
                                <div class="input-box">
-                                  <span class="details">Project Tital</span>
+                                  <span class="details">Project Title<span style="color: red">*</span></span>
                                   <br>
-                                  <input type="text"placeholder="e.g.logo design for resturant"required>
+                                  <input type="text"placeholder="Name for the product"required>
                                </div>
                            </div>
                           </div>
@@ -117,7 +117,7 @@ $conn=$obj1->open();
               </div>
           </div>     
           <div class="input-box2">
-            <span class="details">project description*</span>
+            <span class="details">project description<span style="color: red">*</span></span>
             <br><br>
 			<textarea class="textareafc"type="text"placeholder=""required > </textarea>
           </div>
@@ -125,7 +125,7 @@ $conn=$obj1->open();
           <div class="input-box3">
            
            <input type="file" id="myFile" name="filename">
-           <input type="submit"> 
+           <input type="submit" value="confirm order"> 
 
           </div>
 
@@ -146,29 +146,40 @@ $conn=$obj1->open();
 
 
  <script>
-   let a=$('#no').change(function(){
-     var id=$(this).children("option:selected").val();
-     if(id!=0){
-        $('#id1').css('display','block');
-     }else if(id==0){
-       $('#id1').css('display','none');
-     }
-     console.log(id);
-     $.ajax({
-       type: 'POST',
-       url: './process/sub_cat.php',
-       data: {id: id},
-       success: function(data){
-          let a=JSON.parse(data);
-          let output='';
+$(document).ready(function(){
 
-          for(var i in a){
-            output+=`<option value="${a[i].sub_category}">${a[i].sub_category}</option>`;
+  $('#no').change(function(){
+          var id=$(this).children("option:selected").val();
+          if(id!=0){
+              $('#id1').css('display','block');
+          }else if(id==0){
+            $('#id1').css('display','none');
           }
-          $('#no1').html(output);
-       }
-     })
-   })
+          //console.log(id);
+          $.ajax({
+            type: 'POST',
+            url: './process/sub_cat.php',
+            data: {id: id},
+            success: function(data){
+                
+                let a=JSON.parse(data);
+                let output='';
+
+                for(var i in a){
+                  output+=`<option value="${a[i].id}">${a[i].sub_category}</option>`;
+                  //console.log(a[i].id);
+                }
+                $('#no1').html(output);
+            }
+          })
+        })
+
+        $('#no1').change(function(){
+          let sub_cat=$(this).children("options:selected").text();
+          console.log(sub_cat);
+        })
+
+})
    
  </script>
  </body>

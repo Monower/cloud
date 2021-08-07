@@ -4,7 +4,7 @@ $conn=$obj1->open();
 $options="";
 $id=$_POST['id'];
 
-$sql="SELECT sub_category FROM sub_category WHERE parent_id=$id";
+$sql="SELECT id,sub_category FROM sub_category WHERE parent_id=$id";
 $result=$conn->query($sql);
 
 /* if ($result==true) {

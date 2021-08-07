@@ -1,17 +1,15 @@
 <?php include 'header.php';?>
 <title>Showcase</title>
-<div id="navbar">  
-    <a><button class="signin" onclick="openlForm()" >login</button></a>     
-  <a class="active" href="show.php">Showcase</a>
-  <a href="wwr.php" href="javascript:void(0)">Who we are </a>
-  <a href="javascript:void(0)">Terms and Conditions </a>
-  <a href="placeorder.php">Place an Order</a>
+<div id="navbar">
+  <a><button class="signin" onclick="openlForm()">login</button></a>
+  <!-- <a href="javascript:void(0)">Terms and Conditions </a> -->
   <a href="blog.php">Blog</a>
-  <a><button class="signin" onclick="openForm()" >Sign up</button></a>
-  <a  href="index.php">Home</a>
-
-        
-  </div>
+  <a href="placeorder.php">Place an Order</a>
+  <!-- <a><button class="signin" onclick="openForm()">Sign up</button></a> -->
+  <a href="show.php">Showcase</a>
+  <a href="about.php">About Us </a>
+  <a class="active" href="javascript:void(0)">Home</a>
+</div>
 <!--body part starts here ............body part starts here ............body part starts here ............-->
 
 <div class="rowi">

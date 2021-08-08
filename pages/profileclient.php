@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include '../templates/header.php'; ?>
 <!--body part starts here ............body part starts here ............body part starts here ............-->
 <title>Profile</title>
 
@@ -27,7 +27,7 @@
                 <table style="width:100%">
                     <thead>
                         <tr>
-                            <td colspan="1"><img src="images/pro.svg" class="topleft" width="50px">
+                            <td colspan="1"><img src="../images/pro.svg" class="topleft" width="50px">
                             </td>
                             <td colspan="2" style="text-align:left;">
                                 <p>MY NAME </p><select class="clouds" name="" id="no">
@@ -218,4 +218,4 @@
 </body>
 
 <!--footer part starts here ............footer part starts here ............footer part starts here ............-->
-<?php include 'footer.php'; ?>
+<?php include '../templates/footer.php'; ?>

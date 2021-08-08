@@ -321,6 +321,16 @@ initializeClock('clockdiv', deadline);
 
     </script>
 
+  <script>
+    /* code for client signup */
+      $('#c_sign_form').submit(function(e){
+        e.preventDefault();
+        let cuname=$('#cuname').val();
+        let cmail=$('#cemail').val();
+        $('#cu_error').hide();
+      })
+  </script>
+
 </body>
 </html>
  

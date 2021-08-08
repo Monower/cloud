@@ -5,14 +5,16 @@
 
 
 <div id="navbar">
+  
   <a><button class="signin" onclick="openlForm()">login</button></a>
   <!-- <a href="javascript:void(0)">Terms and Conditions </a> -->
   <a href="./pages/blog.php">Blog</a>
-  <a href="./pages/placeorder.php">Place an Order</a>
+  <!-- <a href="./pages/placeorder.php">Place an Order</a> -->
   <!-- <a><button class="signin" onclick="openForm()">Sign up</button></a> -->
   <a href="./pages/show.php">Showcase</a>
   <a href="./pages/about.php">About Us </a>
   <a class="active" href="index.php">Home</a>
+  
 </div>
 
 

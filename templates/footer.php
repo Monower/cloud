@@ -2,14 +2,14 @@
 <div class="mobfooter">
 <div class="headd">
      <div class="peta">
-        <img src="images/logo.svg" >
+        <img src="../images/logo.svg" >
 </div>
    <div class="chata">
    <div class="tnav" id="Mtn">
-     <a  onclick="openlForm()"><img src="images/mob/logd.svg" >log in</a>
-     <a href="#about"><img src="images/mob/abusd.svg" >About Us</a>
-     <a href="#home" ><img src="images/mob/s$p.svg" >services and Costs</a>
-     <a href="#news"><img src="images/mob/t&c.svg" >terms and conditions</a>
+     <a  onclick="openlForm()"><img src="../images/mob/logd.svg" >log in</a>
+     <a href="#about"><img src="../images/mob/abusd.svg" >About Us</a>
+     <a href="#home" ><img src="../images/mob/s$p.svg" >services and Costs</a>
+     <a href="#news"><img src="../images/mob/t&c.svg" >terms and conditions</a>
  
      
  
@@ -18,10 +18,10 @@
    </div>
 </div> 
 <div class="lfooter">
-<button id="moba"><img src="images/mob/scase.svg" ></button>
-<button id="mobb"><img src="images/mob/blo.svg" ></button>
-<button id="mobc"><img src="images/mob/homei.svg" ></button>
-<button onclick="openForm()"><img src="images/mob/sign.svg" ></button>
+<button id="moba"><img src="../images/mob/scase.svg" ></button>
+<button id="mobb"><img src="../images/mob/blo.svg" ></button>
+<button id="mobc"><img src="../images/mob/homei.svg" ></button>
+<button onclick="openForm()"><img src="../images/mob/sign.svg" ></button>
 <button  ><img src="images/mob/chatt.svg" ></button>
 </div>
 </div>
@@ -32,7 +32,7 @@
   	 <div class="container1">
   	 	<div class="row1">
 			<div class="footer-col">
-				<img src="images/logow.svg" alt="logo cc">
+				<img src="../images/logow.svg" alt="logo cc">
 			</div>
   	 		<div class="footer-col">
   	 			<h4>help</h4>

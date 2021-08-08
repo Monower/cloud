@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="../countDown.min.js"></script>
-<link href="../css/count.css" media="all" rel="stylesheet" />
-<link rel="stylesheet" href="../css/p11.css">
-<link rel="stylesheet" href="../css/mo7.css">
-<link rel="stylesheet" href="../css/mobcount1.css">
+<script src="countDown.min.js"></script>
+<link href="./css/count.css" media="all" rel="stylesheet" />
+<link rel="stylesheet" href="./css/p11.css">
+<link rel="stylesheet" href="./css/mo7.css">
+<link rel="stylesheet" href="./css/mobcount1.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="../images/iconn.png" />
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 <header>
 
     <div class="logogg">
-        <a href="in.html"><img src="../images/logo.svg" class="topleft" width="200px"></a>
+        <a href="in.html"><img src="./images/logo.svg" class="topleft" width="200px"></a>
     </div>
 
     <!-- login form  starts here login form  starts here login form  starts here login form  starts here -->

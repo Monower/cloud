@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="../countDown.min.js"></script>
+<script src="countDown.min.js"></script>
 <link href="./css/count.css" media="all" rel="stylesheet" />
 <link rel="stylesheet" href="./css/p11.css">
-<link rel="stylesheet" href="./css/mo7.css">
+<link rel="stylesheet" href="./css/mo6.css">
 <link rel="stylesheet" href="./css/mobcount1.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="../images/iconn.png" />
@@ -20,7 +20,7 @@
         
         <form action="/action_page.php" class="login-containerlc">
             <h1>Log in</h1><br>
-            Don't have an account? <a style="color: blue" onclick="openForm()" > Sign Up</a>
+            Don't have an account? <a href="#" style="color: blue" id="mobd" > Sign Up</a>
             <br>
             <br>
             <div class="form-elementlog">
@@ -87,7 +87,7 @@
 
                                     <div class="form-element">
                                         <label>skill</label>
-                                        <select class="clouds" name="" id="no">
+                                        <select class="clouds" name="">
                                          <option value="1"></option>
                                         <option value="2">Logo Designer </option>
                                         <option value="3">Poster Designer</option>
@@ -102,7 +102,7 @@
                                     </div>
                                     <div class="form-element">
                                     <label>Expertise</label>
-                                    <select class="clouds" name="" id="no">
+                                    <select class="clouds" name="">
                                          <option value="1"></option>
                                         <option value="2">Logo Designer </option>
                                         <option value="3">Poster Designer</option>
@@ -128,9 +128,9 @@
 
 
                <!--  client signup from here -->
-                <div class="contentonbox" id="box2">
+<!--                 <div class="contentonbox" id="box2">
                         <div>
-                            <form id="c_sign_form">
+                            <form id="c_sign_form" action="./client/profile.php" method="post">
                                 <div class="form-element">
                                     <label>User Name:</label>
                                     <span ><small id="cu_error" style="color: red">user name not available!</small></span>
@@ -154,10 +154,11 @@
                                 </div>
                                 <div>
                                     <button type="submit" class="openboxbutton">sign up</button>
+                                    <input type="submit" value="sign up">
                                 </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
 

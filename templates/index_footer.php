@@ -180,11 +180,19 @@ function closebox2() {
     document.getElementById("mobc").onclick = function () {
         location.href = "index.php";
     };
-    document.getElementById("mobd").onclick = openForm() ;
+    /* document.getElementById("mobd").onclick= function(openForm() ; */
+
+    $('#mobd').click(function(){
+      $('#myForms').css('display','block');
+    })
        
-    document.getElementById("mobe").onclick = function () {
+/*     document.getElementById("mobe").onclick = function () {
         location.href = "show.php";
-    };
+    }; */
+
+    $('#mobe').click(function(){
+      location.href="./pages/show.php";
+    })
 </script>
 
 
@@ -205,9 +213,9 @@ function closeshowcase() {
     function clForm() {
       document.getElementById("myFormc").style.display = "none";
     }
-    function openForm() {
+/*     function openForm() {
       document.getElementById("myForms").style.display = "block";
-    }
+    } */
     
     function closeForm() {
       document.getElementById("myForms").style.display = "none";
@@ -324,10 +332,11 @@ initializeClock('clockdiv', deadline);
   <script>
     /* code for client signup */
       $('#c_sign_form').submit(function(e){
-        e.preventDefault();
+        /* e.preventDefault(); */
         let cuname=$('#cuname').val();
         let cmail=$('#cemail').val();
-        $('#cu_error').hide();
+        alert('user name not available...');
+        console.log('submitted...');
       })
   </script>
 

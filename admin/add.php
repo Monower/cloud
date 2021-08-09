@@ -6,7 +6,9 @@ $conn=$obj1->open();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta
+    charset="UTF-8">
+    <link rel="stylesheet" href="ads.css"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add new</title>
@@ -17,31 +19,37 @@ $conn=$obj1->open();
 <div class="rowad">
   <div class="columnad leftad" >
     <div class="grid-container left">
-      <div class="side1">
-        <div class="item">
-          <a  href="pdr.php">Project Distributor</a>
-        </div>
-          <div class="item">
-          <a href="md.php">Money Distribution</a>
-          </div>
-          <div class="item">
-               <a href="clientd.php">Client Details</a>
-          </div>
+    <div class="side1">
+                    <div class="item">
+                        <a href="index.html">Index</a>
+                    </div>
+                    <div class="item  activec">
+                        <a href="add.php">Add Services</a>
+                    </div>
+                    <div class="item">
+                        <a href="pd.php">Project Distribution</a>
+                    </div>
+                    <div class="item">
+                        <a href="pdr.php">Project Distributor</a>
+                    </div>
+                    <div class="item">
+                        <a href="md.php">Money Distribution</a>
+                    </div>
+                    <div class="item">
+                        <a href="clientd.php">Client Details</a>
+                    </div>
 
-          <div class="item">
-              <a href="cc.php">Cloud Details</a>
-          </div>
-          <div class="item activec">
-            <a href="ptc.php">project type and Cost</a>
-          </div>
-          <div class="item">
-            <a href="cf.php">Chat Filter </a>
-          </div>
-          <div class="item">
-            <a href="add.php">Add</a>
-          </div>
+                    <div class="item">
+                        <a href="cc.php">Registered Cloud Details</a>
+                    </div>
+                    <div class="item">
+                        <a href="ptc.php">project type and Cost</a>
+                    </div>
+                    <div class="item">
+                        <a href="cf.php">Chat Filter </a>
+                    </div>
+                </div>
 
-       </div>
 
    
         <div class="side2">
@@ -67,7 +75,7 @@ Categories:
   <button id="catcancel">cancel</button>
 </div>
 
-<table>
+<table class="blueTable">
   <thead>
     <tr>
       <th>ID</th>
@@ -112,7 +120,7 @@ ADD NEW SUB-CATEGORY with DETAILS:
   <button id="id1">cancel</button>
 </form>
 </div>
-<table>
+<table class="blueTable">
   <thead>
     <tr>
       <th>ID</th>

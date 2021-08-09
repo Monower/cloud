@@ -27,6 +27,9 @@
                         <a href="index.html">Index</a>
                     </div>
                     <div class="item">
+                        <a href="add.php">Add Services</a>
+                    </div>
+                    <div class="item">
                         <a href="pd.php">Project Distribution</a>
                     </div>
                     <div class="item">
@@ -51,20 +54,6 @@
                 </div>
 
 
-                <div class="side2">
-                    <p>Website View</p>
-                    <div class="item">
-
-                    </div>
-                    <p>total members </p>
-                    <div class="item">
-
-                    </div>
-                    <p>active members</p>
-                    <div class="item">
-
-                    </div>
-                </div>
             </div>
         </div>
         <div class="columnadrightadd">
@@ -76,28 +65,28 @@
 
             </div>
             <div class="bird">
-                <div class="label"> Website views </div>
+                <div class="label"> Total Clients </div>
                 <div class="ammount">
                     <Textarea>04</Textarea>
                 </div>
 
             </div>
             <div class="bird">
-                <div class="label"> Website views </div>
+                <div class="label"> Total Clouds </div>
                 <div class="ammount">
                     <Textarea>04</Textarea>
                 </div>
 
             </div>
             <div class="bird">
-                <div class="label"> Website views </div>
+                <div class="label"> Total Orders </div>
                 <div class="ammount">
                     <Textarea>04</Textarea>
                 </div>
 
             </div>
             <div class="bird">
-                <div class="label"> Website views </div>
+                <div class="label"> Total Spent </div>
                 <div class="ammount">
                     <Textarea>04</Textarea>
                 </div>

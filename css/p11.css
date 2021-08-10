@@ -95,8 +95,9 @@
         }
         .showcaseuploader {
             width: 100%;
-            height: 100px;
+            height: fit-content;
             background-color: white;
+            padding: 5px;
         }
         .scbox {
             display: flex;
@@ -313,10 +314,11 @@
             pad: 10px;
             margin: 10px;
             width: 20%;
+            height: 100%;
             padding: 10px;
             border: #000000;
             border-radius: 5px;
-            box-shadow: rgb(146, 138, 138) 0px 0px 8px;
+            box-shadow: rgb(146 138 138) 0px 0px 8px;
         }
         .rightside {
             justify-content: center;
@@ -341,9 +343,9 @@
         }
         .orderboxtop {
             display: flex;
-            background-color: aqua;
+            /* background-color: aqua; */
             flex-direction: column;
-            /* padding: 0px 17px; */
+            padding: 9px 8px;
             align-items: flex-start;
             /* margin: 20px; */
             width: 100%;
@@ -362,8 +364,13 @@
             width: 100%;
             height: 100%;
         }
+        .orderboxdrop label {
+            font-size: 20px;
+            padding: 10px 0px;
+        }
         .orderboxdrop textarea {
-            width: 100%;
+            width: 99%;
+            resize: none;
             border-color: rgb(0, 106, 255);
             height: fit-content;
             height: 300px;
@@ -480,6 +487,95 @@
             width: 100%;
             border: 1px solid rgb(160, 201, 236);
         }
+        /* Button */
+        .openshowcase {
+            background-color: pink;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        /* page */
+        .showform {
+            background-color: white;
+            display: none;
+            position: absolute;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+            box-shadow: rgb(146, 138, 138) 0px 0px 8px
+        }
+        /* Add styles to the form container */
+        .shawcontainer {
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* Full-width input fields */
+        .shawcontainer input[type=text],
+        .shawcontainer input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+        /* When the inputs get focus, do something */
+        .shawcontainer input[type=text]:focus,
+        .shawcontainer input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+        /* Set a style for the submit/login button */
+        .shawcontainer .btn {
+            background-color: white;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+            opacity: 1;
+        }
+        .showbox {
+            display: flex;
+        }
+        .showformleft {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            width: 30%;
+            border-right: solid 2px black;
+            align-items: center;
+            margin: 13px;
+        }
+        .showformleft button {
+            resize: none;
+            border: none;
+            background-color: whitesmoke;
+            width: 100px;
+        }
+        .showformright {
+            display: flex;
+            background-color: white;
+            width: 400px;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        /* Add a red background color to the cancel button */
+        .shawcontainer .cancel {
+            background-color: red;
+        }
+        /* Add some hover effects to buttons */
+        .shawcontainer .btn:hover,
+        .openshowcase:hover {
+            opacity: 1;
+        }
         .form-element input:focus {
             border-color: #4abdf3;
             border-bottom-width: 2px;
@@ -491,6 +587,19 @@
             height: 100%;
             background-color: #2195f300;
         }
+        .showformleft p {
+            font-size: 20px;
+            padding: 3px;
+        }
+        .showformleft textarea {
+            width: 100%;
+            height: 32px;
+            font-size: 20px;
+            resize: none;
+            border-radius: 4px;
+            margin: 3px;
+            border: solid 1px blue;
+        }
         .openboxbutton {
             background-color: white;
             color: black;
@@ -498,6 +607,14 @@
             width: 50%;
             font-size: 25px;
             border: solid 2px blue;
+        }
+        .openboxb {
+            background-color: white;
+            color: black;
+            padding: 2px;
+            width: 50%;
+            font-size: 15px;
+            border: solid 1px blue;
         }
         .problemo {
             display: grid;
@@ -636,21 +753,38 @@
         }
         /* blog ends here blog ends here blog ends here  */
         /* showcase starts here  showcase starts here showcase starts here */
-        .rowi {
-            margin: 0px 12%;
+        .rowshow {
+            margin-left: 10%;
+            margin-right: 10%;
             display: flex;
-            flex-wrap: wrap;
+        }
+        .showrow1 {
+            width: fit-content;
+            padding: 5px;
+        }
+        .showrow2 {
+            width: fit-content;
+            padding: 5px;
+        }
+        .showrow3 {
+            width: fit-content;
+            padding: 5px;
+        }
+        .showrow4 {
+            width: fit-content;
+            padding: 5px;
         }
         .cardi {
             background-color: rgb(255, 255, 255);
-            width: 24%;
+            width: 100%;
             height: fit-content;
             align-self: center;
             margin: 10px 5px;
             text-align: center;
             font-family: arial;
             font-size: 22px;
-            border: solid 1px rgb(175, 173, 173)
+            padding: 3px;
+            border: solid 2px rgb(175, 173, 173)
         }
         .price {
             color: grey;
@@ -660,7 +794,6 @@
         }
         .cardi .buttoni {
             border: none;
-            outline: 0;
             padding: 12px;
             color: white;
             background-color: rgb(1, 20, 35);
@@ -672,6 +805,7 @@
         .cardi .buttoni :hover {
             opacity: 0.7;
         }
+        .cardifoot {}
         /* showcase ends here  showcase ends here showcase ends here */
         .column9 {
             float: left;
@@ -790,6 +924,28 @@
             border-color: #ccc;
             background-color: #ddd;
         }
+        .chatl {
+            background-color: white;
+            display: flex;
+            max-width: 100%;
+            flex-direction: row;
+            align-items: center;
+        }
+        .chatr {
+            background-color: white;
+            display: flex;
+            max-width: 100%;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .msg {
+            background-color: rgb(238, 238, 255);
+            border-radius: 15px;
+            height: fit-content;
+            margin-left: 5px;
+            padding: 7px;
+        }
         .container10 ::after {
             content: "";
             clear: both;
@@ -810,6 +966,7 @@
         .time-right {
             float: right;
             color: #aaa;
+            font-size: 10px;
         }
         .time-left {
             float: left;
@@ -861,8 +1018,9 @@
         }
         /* Chat pop up in home page , chat pop up in home page Chat pop up in home page , chat pop up in home page*/
         .ccontainerc {
-            width: 280px;
-            background-color: rgb(199, 188, 252);
+            width: 350px;
+            height: 450px;
+            border-radius: 25px;
         }
         .containerc {
             border: 2px solid #dedede;
@@ -884,30 +1042,62 @@
             box-sizing: border-box;
         }
         .cheader {
-            background-color: rgb(255, 255, 255);
-            height: 90px;
+            background-color: rgb(1, 10, 63);
+            height: 40px;
             width: auto;
+            border-radius: 16px 16px 0px 0px;
+            display: flex;
+            justify-content: space-between;
         }
         .cfooter {
-            background-color: rgb(255, 255, 255);
-            height: 20px;
-            width: auto;
+            background-color: white;
+            height: 40px;
+            bottom: 3px;
+            margin-bottom: 0px;
+            border-radius: 20px;
+            width: 100%;
+            padding: 0px 0px 0px 10px;
+            display: flex;
+            border: solid 2px rgb(187, 215, 255);
+            flex-direction: row;
+            align-items: center;
+        }
+        .cfooter div {
+            width: fit-content;
+            margin: 3px;
+        }
+        .cfooter div textarea {
+            background-color: white;
+            width: fit-content;
+            border-radius: 20px 0px 0px 20px;
+            resize: none;
+            margin: 2px 0px;
+            font-size: 19px;
+            width: 260px;
+            padding-left: 7px;
+            height: 30px;
+            border-width: 0px 0px 0px 2px;
+            border-color: cornflowerblue;
+        }
+        .cfooter div button {
+            background-color: rgb(5, 8, 56);
+            width: fit-content;
+            color: white;
+            padding: 8px;
+            float: inline-end;
+            border: none;
+            border-radius: 20px;
         }
         .chatareac {
             overflow-y: scroll;
             height: 250px;
             width: 395px;
+            overflow: hidden;
         }
         .chatarea {
             overflow-y: scroll;
-            height: 300px;
-            width: 395px;
-        }
-        .containerc {
-            border: 2px solid #dedede;
-            background-color: #f1f1f1;
-            height: auto;
-            width: 280px;
+            height: 378px;
+            width: inherit;
         }
         .darkerc {
             border-color: #ccc;
@@ -920,11 +1110,9 @@
         }
         /* Button used to open the chat form - fixed at the bottom of the page */
         .open-buttonc {
-            background-color: #555;
             color: white;
             border: none;
             cursor: pointer;
-            opacity: 0.8;
             position: fixed;
             bottom: 23px;
             right: 28px;
@@ -935,10 +1123,12 @@
         .chat-popup1 {
             display: none;
             position: fixed;
-            bottom: 0;
-            right: 15px;
+            bottom: 22px;
+            right: 25px;
             border: 3px solid #f1f1f1;
             z-index: 9;
+            border-radius: 20px;
+            background-color: white;
         }
         /* Add styles to the form containerc */
         .form-containerc {
@@ -1407,8 +1597,10 @@
             list-style: none;
         }
         footer.footer {
+            /* float: initial; */
             background-color: #02070e;
-            padding: 7px 0;
+            padding: 15px 0;
+            bottom: 0px;
         }
         @media screen and (min-width:451px) and (max-width:2000px) {
             .headd {
@@ -1884,10 +2076,6 @@
             float: right;
             margin-left: 20px;
             margin-right: 0;
-        }
-        .time-right {
-            float: right;
-            color: #aaa;
         }
         .time-left {
             float: left;

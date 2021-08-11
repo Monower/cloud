@@ -14,20 +14,31 @@
 <body>
     
 
+<script src="countDown.min.js"></script>
+<link href="css/count.css" media="all" rel="stylesheet" />
+<link rel="stylesheet" href="./css/p11.css">
+<link rel="stylesheet" href="./css/mo6.css">
+<link rel="stylesheet" href="./css/mobcount1.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/iconn.png" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 <header>
 
     <div class="logogg">
-        <a href="in.html"><img src="./images/logo.svg" class="topleft" width="200px"></a>
+        <a href="in.html"><img src="images/logo.svg" class="topleft" width="200px"></a>
     </div>
 
     <!-- login form  starts here login form  starts here login form  starts here login form  starts here -->
     <div class="form-popuploginc" id="mylogin">
-        
         <form action="/action_page.php" class="login-containerlc">
+<<<<<<< HEAD
             <h1>Log in</h1><br>
             Don't have an account? <a href="./pages/signup.php" style="color: blue" id="mobd" > Sign Up</a>
             <br>
             <br>
+=======
+            <h1>Log in</h1>
+>>>>>>> b1ddf018d8098743f4c32d887f5ac7af00fb08b9
             <div class="form-elementlog">
                 <label>Username</label>
                 <input class="log" type="text" required>
@@ -49,50 +60,51 @@
     <div class="form-popup" id="myForms">
         <div class="problemo">
             <div class="pagechanger">
+
                 <button class="openboxbutton" onclick="showbox2() , closebox1()">Client</button>
                 <button class="openboxbutton" onclick="showbox1() , closebox2()">Cloud</button>
                 <img src="images/close.png" onclick="closeForm()">
 
             </div>
             <div style="height: 100%; background-color:red">
-                <!--                                Sign up Cloud                            -->
-                <!--                                Sign up Cloud                            -->
-                <!--                                Sign up Cloud                            -->
+                <!--                                 Sign up Cloud                            -->
+                <!--                                 Sign up Cloud                            -->
+                <!--                                 Sign up Cloud                            -->
                 <div class="contentonbox2" id="box1">
                     <div class="outergrid">
                         <div class="formlay">
                             <form action="/action_page.php" class="formcloud">
                                 <div class="formleft">
                                     <div class="form-element">
-                                        <label>User Name:</label>
+                                        <label>User Name</label>
                                         <input type="text" required>
                                     </div>
                                     <div class="form-element">
-                                        <label>Email:</label>
+                                        <label>Email</label>
                                         <input type="text" required>
                                     </div>
                                     <div class="form-element">
-                                        <label>phonenumber:</label>
+                                        <label>phonenumber</label>
                                         <input type="text" required>
                                     </div>
                                     <div class="form-element">
-                                        <label>Country:</label>
+                                        <label>Country</label>
                                         <input type="text" required>
                                     </div>
                                 </div>
                                 <div class="formright">
                                     <div class="form-element">
-                                        <label>Password:</label>
+                                        <label>Password</label>
                                         <input type="password" required>
                                     </div>
                                     <div class="form-element">
-                                        <label>Retype Password:</label>
+                                        <label>Retype Password</label>
                                         <input type="password" required>
                                     </div>
 
                                     <div class="form-element">
                                         <label>skill</label>
-                                        <select class="clouds" name="">
+                                        <select class="clouds" name="" id="no">
                                          <option value="1"></option>
                                         <option value="2">Logo Designer </option>
                                         <option value="3">Poster Designer</option>
@@ -107,7 +119,7 @@
                                     </div>
                                     <div class="form-element">
                                     <label>Expertise</label>
-                                    <select class="clouds" name="">
+                                    <select class="clouds" name="" id="no">
                                          <option value="1"></option>
                                         <option value="2">Logo Designer </option>
                                         <option value="3">Poster Designer</option>
@@ -132,34 +144,42 @@
 
 
 
+<<<<<<< HEAD
                <!--  client signup from here -->
+=======
+
+>>>>>>> b1ddf018d8098743f4c32d887f5ac7af00fb08b9
                 <div class="contentonbox" id="box2">
                         <div>
-                            <form id="c_sign_form" action="./client/profile.php" method="post">
+                            <form action="/action_page.php">
                                 <div class="form-element">
+<<<<<<< HEAD
                                     <label>User Name:</label>
                                     
                                     <input id="cuname" type="text">
+=======
+                                    <label>User Name</label>
+                                    <input type="text" required>
+>>>>>>> b1ddf018d8098743f4c32d887f5ac7af00fb08b9
                                 </div>
                                 <div class="form-element">
-                                    <label>Email:</label>
-                                    <input id="cemail" type="email">
+                                    <label>Email</label>
+                                    <input type="text" required>
                                 </div>
                                 <div class="form-element">
-                                    <label>Password:</label>
-                                    <input id="cpass" type="password">
+                                    <label>Password</label>
+                                    <input type="password" required>
                                 </div>
                                 <div class="form-element">
-                                    <label>Retype Password:</label>
-                                    <input id="crepass" type="password">
+                                    <label>Retype Password</label>
+                                    <input type="password" required>
                                 </div>
                                 <div class="form-element">
-                                    <label>Country:</label>
-                                    <input id="ccountry" type="text">
+                                    <label>Country</label>
+                                    <input type="text" required>
                                 </div>
                                 <div>
-                                    <button type="submit" class="openboxbutton">sign up</button>
-                                    <input type="submit" value="sign up">
+<button type="submit" class="openboxbutton">sign up</button>
                                 </div>
                         </div>
                     </div>
@@ -168,5 +188,9 @@
             </div>
 
         </div>
+<<<<<<< HEAD
         <!-- sign in form  ends here sign in form  ends here sign in form  ends here sign in form  ends here -->
 </header>
+=======
+        <!-- sign in form  ends here sign in form  ends here sign in form  ends here sign in form  ends here -->
+>>>>>>> b1ddf018d8098743f4c32d887f5ac7af00fb08b9

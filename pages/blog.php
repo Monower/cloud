@@ -1,19 +1,24 @@
-<?php include 'header.php';?>
+<?php include '../templates/header.php';?>
 <title>Blog</title>
 <div id="navbar">
   <a><button class="signin" onclick="openlForm()">login</button></a>
   <!-- <a href="javascript:void(0)">Terms and Conditions </a> -->
-  <a href="blog.php">Blog</a>
+  <a class="active" href="blog.php">Blog</a>
   <a href="placeorder.php">Place an Order</a>
   <!-- <a><button class="signin" onclick="openForm()">Sign up</button></a> -->
   <a href="show.php">Showcase</a>
   <a href="about.php">About Us </a>
-  <a class="active" href="javascript:void(0)">Home</a>
+  <a  href="../index.php">Home</a>
 </div>
+
+
+
+
+
 <div class="blogg">
   
   <div class="topblog">
-  <img src="images/sm.png">
+  <img src="../images/sm.png">
         <h1>Your body is a ham sandwich…</h1> 
        
       Your body is a ham sandwich…
@@ -35,19 +40,19 @@
 </div>
 <div class="lowerblog">
          <div class="blogcard"> 
-              <img src="images/ss.png" >
+              <img src="../images/ss.png" >
               <h1>lets have some fune</h1>
                <p>thisthis contest was about making a creative logothis contest was about making a creative logo contest was about making a creative logo</p>
                <a href="#">read more</a>
          </div>
          <div class="blogcard"> 
-              <img src="images/ss.png" >
+              <img src="../images/ss.png" >
               <h1>lets have some fune</h1>
                <p>thisthis contest was about making a creative logothis contest was about making a creative logo contest was about making a creative logo</p>
                <a href="#">read more</a>
          </div>
          <div class="blogcard"> 
-              <img src="images/ss.png" >
+              <img src="../images/ss.png" >
               <h1>lets have some fune</h1>
                <p>thisthis contest was about making a creative logothis contest was about making a creative logo contest was about making a creative logo</p>
                <a href="#">read more</a>
@@ -57,4 +62,4 @@
       
   </div>
 
-  <?php include 'footer.php';?>
+  <?php include '../templates/footer.php';?>

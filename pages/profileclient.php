@@ -6,11 +6,11 @@
 <div id="navbar">
     <a><button class="signin" onclick="openlForm()">login</button></a>
     <a href="show.php">Showcase</a>
-    <a href="wwr.php" href="javascript:void(0)">Who we are </a>
+    <a href="wwr.php" href="about.php">Who we are </a>
     <a href="javascript:void(0)">Terms and Conditions </a>
     <a href="placeorder.php">Place an Order</a>
     <a href="blog.php">Blog</a>
-    <a><button class="signin" onclick="openForm()">Sign up</button></a>
+   
     <a class="active" href="javascript:void(0)">Home</a>
 
 
@@ -30,23 +30,14 @@
                             <td colspan="1"><img src="../images/pro.svg" class="topleft" width="50px">
                             </td>
                             <td colspan="2" style="text-align:left;">
-                                <p>MY NAME </p><select class="clouds" name="" id="no">
-                                         <option value="1"></option>
-                                        <option value="2">Logo Designer </option>
-                                        <option value="3">Poster Designer</option>
-                                        <option value="4">Social Media Designer</option>
-                                        <option value="5">Social Media Marketer</option>
-                                        <option value="6">banner design</option>
-                                        <option value="7">UI/UX designer</option>
-                                        <option value="8">3D designer</option>
-                                        <option value="9">12</option>
-                                        <option value="10">13</option>
-                                         </select>
+                                <p>MY NAME </p>
                             </td>
                         </tr>
 
                         <tr rowspan="3">
                             <td colspan="3" style="text-align: left;font-weight:bold;">
+                                <p>Email</p>
+                                <p>Country</p>
                                 <p>Projects completed</p>
                                 <p>On time Projects</p>
                                 <p>Recommendations</p>
@@ -57,128 +48,111 @@
 
                     </thead>
                 </table>
-                <div class="showcaseuploader">
-                    <div>my name is khan <button>Upload</button></div>
-                    <div class="scbox"></div>
-                </div>
-                <!--     <div class="projectlist">
-                <p>Projects Cost </p>
-                <div style="background-color: blue;height: 30px;width: 200px;margin: 4px;">a</div>
-                <div style="background-color: blue;height: 30px;width: 200px;margin: 4px;">b</div>
-                <div style="background-color: blue;height: 30px;width: 200px;margin: 4px;">c</div>
-
-            </div>
-            <div class="reviewlist">
-                <p>Projects Cost </p>
-                <div style="background-color: rgb(94, 255, 0);height: 30px;width: 200px;margin: 4px;">a</div>
-                <div style="background-color: rgb(0, 255, 136);height: 30px;width: 200px;margin: 4px;">b</div>
-                <div style="background-color: rgb(0, 255, 64);height: 30px;width: 200px;margin: 4px;">c</div>
-
-            </div>
--->
+              
+               
             </div>
 
         </div>
-        <div class="rightside">
-            <div class="all">
+            <div class="rightside">
+                <div class="all">
 
-                <div class="ordertop">
-                    <div class="orderboxtop">
-                        <label>Project Details</label>
-                        <input class="te" type="text" placeholder="" required>
+                        <div class="ordertop">
+                            <div class="orderboxtop">
+                                <label>Project Details</label>
+                                <input class="te" type="text" placeholder="" required>
+                            </div>
+                            <div class="orderboxtop">
+                                <label>Project Title</label>
+                                <input class="te" type="text" placeholder="" required>
+                            </div>
+                            <div class="orderboxtop">
+                                <label>Project Cost</label>
+                                <input class="te" type="text" placeholder="" required>
+                            </div>
+
+                        </div>
+                        
+                        <div class="orderboxdrop">
+                            <label>Project Descriptions</label>
+
+                            <textarea>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex a odit aut omnis excepturi? Aspernatur, atque vitae. Minus aliquid possimus animi deleniti optio dicta ipsum repudiandae quia quod ad quo recusandae, nam modi iusto accusamus! Iusto officiis
+                            laudantium necessitatibus modi autem corporis dolor labore, maiores animi, aut explicabo architecto pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, ipsum?
+                            </textarea>
+                        </div>
+                    <div id="clockdiv">
+                                    <div>
+                                        <span class="days"></span>
+                                        <div class="smalltext">Days</div>
+                                    </div>
+                                    <div>
+                                        <span class="hours"></span>
+                                        <div class="smalltext">Hours</div>
+                                    </div>
+                                    <div>
+                                        <span class="minutes"></span>
+                                        <div class="smalltext">Minutes</div>
+                                    </div>
+                                    <div>
+                                        <span class="seconds"></span>
+                                        <div class="smalltext">Seconds</div>
+                                    </div>
                     </div>
-                    <div class="orderboxtop">
-                        <label>Project Title</label>
-                        <input class="te" type="text" placeholder="" required>
+                    <button class="btncom" onclick="opFormcom()">COMPLETE</button>
+                <!--  
                     </div>
-                    <div class="orderboxtop">
-                        <label>Project Cost</label>
-                        <input class="te" type="text" placeholder="" required>
-                    </div>
+                        <div class="chatall">
+                        <h2>Chat Messages</h2>
+                        <div class="container12">
+
+
+                            <div class="container11">
+                                <img src="images/proc.svg" alt="Avatar" style="width:100%;">
+                                <p>Hello. How are you today?</p>
+                                <span class="time-right">11:00</span>
+                            </div>
+
+                            <div class="container11 darker">
+                                <img src="images/pro.svg" alt="Avatar" class="right" style="width:100%;">
+                                <p>Hey! I'm fine. Thanks for asking!</p>
+                                <span class="time-left">11:01</span>
+                            </div>
+
+                            <div class="container11">
+                                <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
+                                <p>Sweet! So, what do you wanna do today?</p>
+                                <span class="time-right">11:02</span>
+                            </div>
+
+                            <div class="container11 darker">
+                                <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
+                                <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+                                <span class="time-left">11:05</span>
+                            </div>
+
+                        </div>
+                        <div class="chatwid">
+                            <table style="width:auto;">
+                                <tr>
+                                    <td><textarea placeholder="Type message.." name="msg" class="textareaccc"></textarea>
+                                    </td>
+                                    <td><button type="submit" class="btnsend">Send</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div><input type="file" id="myFile" name="filename"></div>
+
+                    </div> -->
+
+                    
+
+
+
 
                 </div>
-                <div class="orderboxdrop">
-                    <label>Project Descriptions</label>
-
-                    <textarea>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex a odit aut omnis excepturi? Aspernatur, atque vitae. Minus aliquid possimus animi deleniti optio dicta ipsum repudiandae quia quod ad quo recusandae, nam modi iusto accusamus! Iusto officiis
-                    laudantium necessitatibus modi autem corporis dolor labore, maiores animi, aut explicabo architecto pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, ipsum?
-                    </textarea>
-                </div>
-                <div id="clockdiv">
-                    <div>
-                        <span class="days"></span>
-                        <div class="smalltext">Days</div>
-                    </div>
-                    <div>
-                        <span class="hours"></span>
-                        <div class="smalltext">Hours</div>
-                    </div>
-                    <div>
-                        <span class="minutes"></span>
-                        <div class="smalltext">Minutes</div>
-                    </div>
-                    <div>
-                        <span class="seconds"></span>
-                        <div class="smalltext">Seconds</div>
-                    </div>
-                </div>
-                <div class="timerbox">
-                    <div style="font-size: 25px;">Time remaining</div>
-                    <div class="container5"></div>
-                </div>
-                <!--       <div class="chatall">
-                    <h2>Chat Messages</h2>
-                    <div class="container12">
-
-
-                        <div class="container11">
-                            <img src="images/proc.svg" alt="Avatar" style="width:100%;">
-                            <p>Hello. How are you today?</p>
-                            <span class="time-right">11:00</span>
-                        </div>
-
-                        <div class="container11 darker">
-                            <img src="images/pro.svg" alt="Avatar" class="right" style="width:100%;">
-                            <p>Hey! I'm fine. Thanks for asking!</p>
-                            <span class="time-left">11:01</span>
-                        </div>
-
-                        <div class="container11">
-                            <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
-                            <p>Sweet! So, what do you wanna do today?</p>
-                            <span class="time-right">11:02</span>
-                        </div>
-
-                        <div class="container11 darker">
-                            <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
-                            <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
-                            <span class="time-left">11:05</span>
-                        </div>
-
-                    </div>
-                    <div class="chatwid">
-                        <table style="width:auto;">
-                            <tr>
-                                <td><textarea placeholder="Type message.." name="msg" class="textareaccc"></textarea>
-                                </td>
-                                <td><button type="submit" class="btnsend">Send</button></td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div><input type="file" id="myFile" name="filename"></div>
-
-                </div> -->
-
-                <button class="btncom" onclick="opFormcom()">COMPLETE</button>
-
-
-
 
             </div>
-
-        </div>
-    </div>
+         </div>
     </div>
     <!-- its the review pop up  its the review pop up its the review pop up its the review pop up  -->
     <div class="form-popupcom" id="myFormcom">

@@ -1,9 +1,9 @@
-<?php include 'header.php';?>
+
 <title>Place Order</title>
 
 <?php 
-include 'header.php';
-include './db/dbconnect.php';
+include '../templates/header.php';
+include '../db/dbconnect.php';
 $conn=$obj1->open();
 
 ?>
@@ -11,11 +11,11 @@ $conn=$obj1->open();
   <a><button class="signin" onclick="openlForm()">login</button></a>
   <!-- <a href="javascript:void(0)">Terms and Conditions </a> -->
   <a href="blog.php">Blog</a>
-  <a href="placeorder.php">Place an Order</a>
+  <a class="active" href="placeorder.php">Place an Order</a>
   <!-- <a><button class="signin" onclick="openForm()">Sign up</button></a> -->
   <a href="show.php">Showcase</a>
   <a href="about.php">About Us </a>
-  <a class="active" href="javascript:void(0)">Home</a>
+  <a  href="javascript:void(0)">Home</a>
 </div>
 
 
@@ -185,5 +185,5 @@ $(document).ready(function(){
  </body>
  
 <!--footer part starts here ............footer part starts here ............footer part starts here ............-->
-<?php include 'footer.php';?>
+<?php include '../templates/footer.php';?>
  

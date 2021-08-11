@@ -13,6 +13,9 @@
                         <a href="index.html">Index</a>
                     </div>
                     <div class="item">
+                        <a href="add.php">Add Services</a>
+                    </div>
+                    <div class="item">
                         <a href="pd.php">Project Distribution</a>
                     </div>
                     <div class="item">
@@ -34,23 +37,7 @@
                     <div class="item">
                         <a href="cf.php">Chat Filter </a>
                     </div>
-                </div>
-
-   
-    <div class="side2">
-          <p>Website View</p>
-           <div class="item">
-       
-            </div>
-            <p>total members </p>
-           <div class="item">
-       
-           </div>
-            <p>active members</p>
-           <div class="item">
-       
-           </div>
-      </div>
+                </div>    
   </div>
   </div>
   <div class="columnad rightad" >

@@ -3,7 +3,6 @@
 <!--body part starts here ............body part starts here ............body part starts here ............-->
 
 
-
 <div id="navbar">
   
   <a><button class="signin" onclick="openlForm()">login</button></a>

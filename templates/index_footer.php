@@ -26,8 +26,6 @@
 </div>
 </div>
 
-
-</body>
 <footer class="footer">
   	 <div class="container1">
   	 	<div class="row1">

@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="../countDown.min.js"></script>
-<link href="../css/count.css" media="all" rel="stylesheet" />
-<link rel="stylesheet" href="../css/p11.css">
-<link rel="stylesheet" href="../css/mo7.css">
-<link rel="stylesheet" href="../css/mobcount1.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="../images/iconn.png" />
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<head>
+        <script src="../countDown.min.js"></script>
+        <link href="../css/count.css" media="all" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/p11.css">
+        <link rel="stylesheet" href="../css/mo7.css">
+        <link rel="stylesheet" href="../css/mobcount1.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="../images/iconn.png" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
 <header>
 
     <div class="logogg">
@@ -159,3 +162,4 @@
 
         </div>
         <!-- sign in form  ends here sign in form  ends here sign in form  ends here sign in form  ends here -->
+</header>

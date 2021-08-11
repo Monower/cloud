@@ -31,14 +31,11 @@
     <!-- login form  starts here login form  starts here login form  starts here login form  starts here -->
     <div class="form-popuploginc" id="mylogin">
         <form action="/action_page.php" class="login-containerlc">
-<<<<<<< HEAD
             <h1>Log in</h1><br>
             Don't have an account? <a href="./pages/signup.php" style="color: blue" id="mobd" > Sign Up</a>
             <br>
             <br>
-=======
             <h1>Log in</h1>
->>>>>>> b1ddf018d8098743f4c32d887f5ac7af00fb08b9
             <div class="form-elementlog">
                 <label>Username</label>
                 <input class="log" type="text" required>
@@ -144,23 +141,17 @@
 
 
 
-<<<<<<< HEAD
                <!--  client signup from here -->
-=======
 
->>>>>>> b1ddf018d8098743f4c32d887f5ac7af00fb08b9
                 <div class="contentonbox" id="box2">
                         <div>
                             <form action="/action_page.php">
                                 <div class="form-element">
-<<<<<<< HEAD
                                     <label>User Name:</label>
                                     
                                     <input id="cuname" type="text">
-=======
                                     <label>User Name</label>
                                     <input type="text" required>
->>>>>>> b1ddf018d8098743f4c32d887f5ac7af00fb08b9
                                 </div>
                                 <div class="form-element">
                                     <label>Email</label>
@@ -188,9 +179,6 @@
             </div>
 
         </div>
-<<<<<<< HEAD
         <!-- sign in form  ends here sign in form  ends here sign in form  ends here sign in form  ends here -->
 </header>
-=======
         <!-- sign in form  ends here sign in form  ends here sign in form  ends here sign in form  ends here -->
->>>>>>> b1ddf018d8098743f4c32d887f5ac7af00fb08b9

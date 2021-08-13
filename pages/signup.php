@@ -25,29 +25,32 @@
     <!-- adds dev -->
     <form action="../process/add_dev.php" method="post">
         <h2>Work with us</h2>
-        User Name: <input type="text" name="dev_name" required><br>
+        <?php echo $_GET['error2']; ?><br>
+        Name: <input type="text" name="dev_name" required><br>
         Email: <input type="email" name="dev_mail" required><br>
         Phone/WhatsApp: <input type="number" name="dev_num" required><br>
         Country: <input type="text" name="dev_c" required><br>
         A link where we can see your work: <input type="url" name="dev_link" required><br>
         In which feild do you expertise:
         <select name="dev_skill">
-            <option value="1">--select skill--</option>
-            <option value="2">Logo Designer </option>
-            <option value="3">Poster Designer</option>
-            <option value="4">Social Media Designer</option>
-            <option value="5">Social Media Marketer</option>
-            <option value="6">banner design</option>
-            <option value="7">UI/UX designer</option>
-            <option value="8">Android App developer</option>
-            <option value="8">Vue Js developer</option>
-            <option value="8">Laravel Developer</option>
-            <option value="8">SEO expert</option>
-            <option value="8">IOS developer</option>
-            <option value="8">React Developer</option>
+            <option value="">--select skill--</option>
+            <option value="ld">Logo Designer </option>
+            <option value="pd">Poster Designer</option>
+            <option value="smd">Social Media Designer</option>
+            <option value="smm">Social Media Marketer</option>
+            <option value="bd">banner design</option>
+            <option value="ui">UI/UX designer</option>
+            <option value="aad">Android App developer</option>
+            <option value="vue">Vue Js developer</option>
+            <option value="lara">Laravel Developer</option>
+            <option value="seo">SEO expert</option>
+            <option value="ios">IOS developer</option>
+            <option value="react">React Developer</option>
         </select><br>
         If your talents are not in  the list: <br>
-        <textarea name="dev_text"cols="30" rows="10">Type your talents...</textarea><br>
+        <textarea name="dev_text"cols="30" rows="10"></textarea><br>
+        <!-- dont delete this section. i'll work on cv upload later -->
+        <!-- Upload Resume: <input type="file" name="dev_cv"><br> -->
         Terms & conditions: <br>
         1.Rules are applied for everyone.
         <br>

@@ -1,87 +1,65 @@
-<?php 
-include '../templates/header.php';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+
+    <!-- adds client -->
+    <form action="../process/add_clients.php" method="POST" id="id0">
+        <h2>Sign Up as Client</h2>
+        <?php echo $_GET['error']; ?><br>
+        Name: <input type="text" name="cname" required><br>
+        Email: <input type="email" name="cmail" required><br>
+        Country: <input type="text" name="ccountry" required><br>
+        Password: <input type="password" name="cpass" required><br>
+        Re-type Password: <input type="password" name="recpass" required><br>
+        <input type="submit" value="submit">
 
 
-
-
-
-
-?>
-
-
-Signup As: <button id="id0">Client</button> <button id="id8">Developer</button>
-<br><br>
-
-<div id="id1" style="display: none">
-    <form id="id7">
-        <h2>Sign  Up as a client</h2><br>
-        User Name: <input type="text" name="cname" id="id2" required><br>
-        Email: <input type="email" name="cmail" id="id3" required><br>
-        Password: <input type="password" name="cpass" id="id4" required><br>
-        Retype Password: <input type="password" name="crepass" id="id5"><br>
-        Country: <input type="text" name="ccountry" id="id6"><br>
-        <input type="submit" value="signup">
     </form>
-</div>
 
-<div id="id9" style="display: none">
-    <form id="id10">
-        <h2>Sign  Up as a Developer</h2><br>
-        User Name: <input type="text" name="cname" id="id11" required><br>
-        Email: <input type="email" name="cmail" id="id12" required><br>
-        Password: <input type="password" name="cpass" id="id13" required><br>
-        Retype Password: <input type="password" name="crepass" id="id14"><br>
-        Country: <input type="text" name="ccountry" id="id15"><br>
-        <input type="submit" value="signup">
+    <!-- adds dev -->
+    <form action="../process/add_dev.php" method="post">
+        <h2>Work with us</h2>
+        User Name: <input type="text" name="dev_name" required><br>
+        Email: <input type="email" name="dev_mail" required><br>
+        Phone/WhatsApp: <input type="number" name="dev_num" required><br>
+        Country: <input type="text" name="dev_c" required><br>
+        A link where we can see your work: <input type="url" name="dev_link" required><br>
+        In which feild do you expertise:
+        <select name="dev_skill">
+            <option value="1">--select skill--</option>
+            <option value="2">Logo Designer </option>
+            <option value="3">Poster Designer</option>
+            <option value="4">Social Media Designer</option>
+            <option value="5">Social Media Marketer</option>
+            <option value="6">banner design</option>
+            <option value="7">UI/UX designer</option>
+            <option value="8">Android App developer</option>
+            <option value="8">Vue Js developer</option>
+            <option value="8">Laravel Developer</option>
+            <option value="8">SEO expert</option>
+            <option value="8">IOS developer</option>
+            <option value="8">React Developer</option>
+        </select><br>
+        If your talents are not in  the list: <br>
+        <textarea name="dev_text"cols="30" rows="10">Type your talents...</textarea><br>
+        Terms & conditions: <br>
+        1.Rules are applied for everyone.
+        <br>
+        <input type="checkbox" name="dev_agreement" required>
+        I have read and i agree with the rules. <br>
+        <input type="submit" value="apply">
+
+
+
+
     </form>
-</div>
 
 
-
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<script>
-    $(document).ready(function(){
-
-        //for client
-        $('#id0').click(function(){
-            $('#id1').css('display','block');
-            $('#id9').css('display','none');
-        })
-
-        $('#id8').click(function(){
-            $('#id9').css('display','block');
-            $('#id1').css('display','none');
-        })
-
-        $('#id7').submit(function(e){
-            e.preventDefault();
-
-            let cname=$('#id2').val();
-            let cmail=$('#id3').val();
-            let cpass=$('#id4').val();
-            let crepass=$('#id5').val();
-            let country=$('#id6').val();
-
-            $.ajax({
-                type: 'POST',
-                url: '../process/verify_clients.php',
-                data: {cname: cname,cmail: cmail},
-                success: function(data){
-                    alert('user added');    
-                },
-                error: function(data){
-                    alert(data);
-                }
-            })
-        })
-    })
-</script>
-<?php include '../templates/footer.php'; ?>
+</body>
+</html>

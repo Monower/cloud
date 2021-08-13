@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <script src="../countDown.min.js"></script>
+        
         <link href="../css/count.css" media="all" rel="stylesheet" />
         <link rel="stylesheet" href="../css/p11.css">
-        <link rel="stylesheet" href="../css/mo7.css">
+        <link rel="stylesheet" href="../css/mo6.css">
         <link rel="stylesheet" href="../css/mobcount1.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="../images/iconn.png" />
@@ -46,7 +46,7 @@
 
                 <button class="openboxbutton" onclick="showbox2() , closebox1()">Client</button>
                 <button class="openboxbutton" onclick="showbox1() , closebox2()">Cloud</button>
-                <img src="images/close.png" onclick="closeForm()">
+                <img src="../images/close.png" onclick="closeForm()">
 
             </div>
             <div style="height: 100%; background-color:red">
@@ -152,7 +152,7 @@
                                     <input type="text" required>
                                 </div>
                                 <div>
-<button type="submit" class="openboxbutton">sign up</button>
+                                        <button type="submit" class="openboxbutton">sign up</button>
                                 </div>
                         </div>
                     </div>

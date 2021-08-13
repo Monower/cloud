@@ -22,7 +22,7 @@
 <button id="mobb"><img src="../images/mob/blo.svg" ></button>
 <button id="mobc"><img src="../images/mob/homei.svg" ></button>
 <button onclick="openForm()"><img src="../images/mob/sign.svg" ></button>
-<button  ><img src="images/mob/chatt.svg" ></button>
+<button  ><img src="../images/mob/chatt.svg" ></button>
 </div>
 </div>
 
@@ -176,7 +176,7 @@
     document.getElementById("mobc").onclick = function() {
         location.href = "index.php";
     };
-    document.getElementById("mobd").onclick = openForm();
+    //document.getElementById("mobd").onclick = openForm();
 
     document.getElementById("mobe").onclick = function() {
         location.href = "show.php";

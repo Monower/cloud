@@ -3,6 +3,8 @@
 <title>Profile</title>
 
 
+
+
 <div id="navbar">
     <a><button class="signin" onclick="openlForm()">login</button></a>
     <a href="show.php">Showcase</a>
@@ -16,7 +18,9 @@
 
 </div>
 
-<body>
+<h2>This is clients profile</h2>
+
+
 
 
 
@@ -189,7 +193,7 @@
         </div>
     </div>
 
-</body>
+
 
 <!--footer part starts here ............footer part starts here ............footer part starts here ............-->
 <?php include '../templates/footer.php'; ?>

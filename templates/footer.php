@@ -6,7 +6,7 @@
 </div>
    <div class="chata">
    <div class="tnav" id="Mtn">
-     <a  onclick="openlForm()"><img src="../images/mob/logd.svg" >log in</a>
+     
      <a href="#about"><img src="../images/mob/abusd.svg" >About Us</a>
      <a href="#home" ><img src="../images/mob/s$p.svg" >services and Costs</a>
      <a href="#news"><img src="../images/mob/t&c.svg" >terms and conditions</a>
@@ -18,12 +18,12 @@
    </div>
 </div> 
 <div class="lfooter">
-<button id="moba"><img src="../images/mob/scase.svg" ></button>
-<button id="mobb"><img src="../images/mob/blo.svg" ></button>
-<button id="mobc"><img src="../images/mob/homei.svg" ></button>
-<button onclick="openForm()"><img src="../images/mob/sign.svg" ></button>
-<button  ><img src="images/mob/chatt.svg" ></button>
-</div>
+        <button id="moba"><img src="../images/mob/scase.svg" ></button>
+        <button id="mobb"><img src="../images/mob/blo.svg" ></button>
+        <button id="mobc"><img src="../images/mob/homei.svg" ></button>
+        <button onclick="openlForm()"><img src="../images/mob/logd.svg"></button>
+        <button onclick="opForm()"><img src="../images/mob/chatt.svg" ></button>
+    </div>
 </div>
 
 
@@ -88,54 +88,169 @@
 	  </div>
   	</div>
   <!--chat button starts here  -->
-  <img src="../images/chat.svg" class="open-buttonc" onclick="opForm()">
-    <div class="chat-popup1" id="myFormc">
+  <img src="../images/sup.svg" class="open-buttonc" onclick="opForm()">
+  <div class="chat-popup2" id="myFormc">
         <div class="ccontainerc">
             <div class="cheader">
-                <img src="../images/logow.svg" style="width: 50px;  margin-left:12px;">
-                <img src="../images/closew.svg" style="width: 15px; margin-right:12px;" onclick="clForm()">
+                <img src="./images/logow.svg" style="width: 50px;  margin-left:12px;">
+                <img src="./images/closew.svg" style="width: 15px; margin-right:12px;" onclick="clForm()">
             </div>
             <div class="chatarea">
-                
-
-                <div class="chatr">
-                    
+            <div class="chatm">  
+            <img src="./images/chat.svg" width="70px">                 
+                    <div>
+                        <a>Support Operator </a><br>
+                        <a>Cloud Company </a>
+                   
+                </div>     
+            </div>  
+            <div class="chatr">                   
                     <div class="msg"><p>HE</p>
                     <span class="time-right">11:00</span></div>
-                    <img src="../images/chat.svg" width="50px">
+                    <img src="./images/chat.svg" width="50px">
                 </div>
-                <div class="chatr">
-                    
+                <div class="chatr">                   
                     <div class="msg"><p>allalal</p>
                     <span class="time-right">11:00</span></div>
-                    <img src="../images/chat.svg" width="50px">
+                    <img src="./images/chat.svg" width="50px">
                 </div>
-                <div class="chatr">
-                    
+                <div class="chatr">                   
                     <div class="msg"><p>allalal</p>
                     <span class="time-right">11:00</span></div>
-                    <img src="../images/chat.svg" width="50px">
+                    <img src="./images/chat.svg" width="50px">
                 </div>
                 <div class="chatl">
-                    <img src="../images/chat.svg" width="50px">
+                    <img src="./images/chat.svg" width="50px">
                     <div class="msg"><p>Hello. How are you today?</p>
                     <span class="time-right">11:00</span></div>
-                </div>
-               
+                </div>  
+                <div class="chatl">
+                    <img src="./images/chat.svg" width="50px">
+                    <div class="msg"><p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+                </div>  
+                <div class="chatl">
+                    <img src="./images/chat.svg" width="50px">
+                    <div class="msg"><p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+                </div>  
+                <div class="chatl">
+                    <img src="./images/chat.svg" width="50px">
+                    <div class="msg"><p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+                </div>  
+                <div class="chatl">
+                    <img src="./images/chat.svg" width="50px">
+                    <div class="msg"><p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+                </div>  
+                <div class="chatl">
+                    <img src="./images/chat.svg" width="50px">
+                    <div class="msg"><p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+                </div>  
+                <div class="chatl">
+                    <img src="./images/chat.svg" width="50px">
+                    <div class="msg"><p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+                </div>  
+                <div class="chatl">
+                    <img src="./images/chat.svg" width="50px">
+                    <div class="msg"><p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+                </div>              
             </div>
             <div class="cfooter">
-                <div><img src="../images/up.svg" width="15px"></div>
-                <div><textarea placeholder="Type message.." ></textarea></div>
-                <div><button type="submit"  >Send</button></div>
-
-
+                <div class="a" > <div class="image-upload">
+                                    <label for="file-input">
+                                        <img src="../images/up.svg" width="15px"/>
+                                    </label>
+                                    <input id="file-input" type="file" />
+                </div></div>
+                <div class="b"><textarea placeholder="Type message.." ></textarea></div>
+                <div class="c"><button type="submit"  >Send</button></div>
             </div>
         </div>
     </div>
-    </div>
 </footer>
 
+<script>
 
+document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
+  const dropZoneElement = inputElement.closest(".drop-zone");
+
+  dropZoneElement.addEventListener("click", (e) => {
+    inputElement.click();
+  });
+
+  inputElement.addEventListener("change", (e) => {
+    if (inputElement.files.length) {
+      updateThumbnail(dropZoneElement, inputElement.files[0]);
+    }
+  });
+
+  dropZoneElement.addEventListener("dragover", (e) => {
+    e.preventDefault();
+    dropZoneElement.classList.add("drop-zone--over");
+  });
+
+  ["dragleave", "dragend"].forEach((type) => {
+    dropZoneElement.addEventListener(type, (e) => {
+      dropZoneElement.classList.remove("drop-zone--over");
+    });
+  });
+
+  dropZoneElement.addEventListener("drop", (e) => {
+    e.preventDefault();
+
+    if (e.dataTransfer.files.length) {
+      inputElement.files = e.dataTransfer.files;
+      updateThumbnail(dropZoneElement, e.dataTransfer.files[0]);
+    }
+
+    dropZoneElement.classList.remove("drop-zone--over");
+  });
+});
+
+/**
+ * Updates the thumbnail on a drop zone element.
+ *
+ * @param {HTMLElement} dropZoneElement
+ * @param {File} file
+ */
+function updateThumbnail(dropZoneElement, file) {
+  let thumbnailElement = dropZoneElement.querySelector(".drop-zone__thumb");
+
+  // First time - remove the prompt
+  if (dropZoneElement.querySelector(".drop-zone__prompt")) {
+    dropZoneElement.querySelector(".drop-zone__prompt").remove();
+  }
+
+  // First time - there is no thumbnail element, so lets create it
+  if (!thumbnailElement) {
+    thumbnailElement = document.createElement("div");
+    thumbnailElement.classList.add("drop-zone__thumb");
+    dropZoneElement.appendChild(thumbnailElement);
+  }
+
+  thumbnailElement.dataset.label = file.name;
+
+  // Show thumbnail for image files
+  if (file.type.startsWith("image/")) {
+    const reader = new FileReader();
+
+    reader.readAsDataURL(file);
+    reader.onload = () => {
+      thumbnailElement.style.backgroundImage = url('${reader.result}');
+    };
+  } else {
+    thumbnailElement.style.backgroundImage = null;
+  }
+}
+
+
+
+</script>
 <script>
     function showbox1() {
         document.getElementById("box1").style.display = "flex";
@@ -172,9 +287,10 @@
     };
     document.getElementById("mobb").onclick = function() {
         location.href = "blog.php";
+        console.log(parapara);
     };
     document.getElementById("mobc").onclick = function() {
-        location.href = "index.php";
+        location.href = "../index.php";
     };
     document.getElementById("mobd").onclick = openForm();
 
@@ -204,7 +320,7 @@
 
     function openForm() {
         document.getElementById("myForms").style.display = "block";
-    }
+        console.log(csadsds);    }
 
     function closeForm() {
         document.getElementById("myForms").style.display = "none";
@@ -235,42 +351,7 @@
         }
     }
 </script>
-<script>
-    window.onscroll = function() {
-        myFunction()
-    };
 
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-
-    function myFunction() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
-        }
-    }
-
-    var cd5 = new Countdown({
-        cont: document.querySelector('.container5'),
-        date: Date.now() + 86400,
-        outputTranslation: {
-            year: 'Years',
-            week: 'Weeks',
-            day: 'Days',
-            hour: 'Hours',
-            minute: 'Minutes',
-            second: 'Seconds',
-        },
-        endCallback: function() {
-            document.querySelector('.container5').insertAdjacentHTML(
-                'beforeend',
-                '<div style="display: flex;height: 50px;align-items: center;justify-content: center;background: red;font-weight: bold;">time UP </div>')
-        },
-        outputFormat: 'week|day|hour|minute|second',
-    });
-    cd5.start();
-</script>`
 <script>
     function getTimeRemaining(endtime) {
         const total = Date.parse(endtime) - Date.parse(new Date());
@@ -312,7 +393,7 @@
         const timeinterval = setInterval(updateClock, 1000);
     }
 
-    const deadline = new Date(Date.parse(new Date()) + 10 * 24 * 60 * 60 * 1000);
+    const deadline = new Date(Date.parse(new Date()) + 30 * 24 * 60 * 60 * 1000);
     initializeClock('clockdiv', deadline);
 </script>
 

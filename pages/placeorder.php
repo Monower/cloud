@@ -8,7 +8,7 @@ $conn=$obj1->open();
 
 ?>
 <div id="navbar">
-  <a><button class="signin" onclick="openlForm()">login</button></a>
+  <a><button class="signin" onclick="openlForm()">logout</button></a>
   <!-- <a href="javascript:void(0)">Terms and Conditions </a> -->
   <a href="blog.php">Blog</a>
   <a class="active" href="placeorder.php">Place an Order</a>

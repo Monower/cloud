@@ -87,14 +87,17 @@ p {
 }
 
 .leftad {
-    width: 250px;
+    width: 200px;
     float: left;
+    position: fixed;
 }
 
 .rightad {
-    width: auto;
-    height: 560px;
+    margin-left: 205px;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
     overflow-y: scroll;
+    background-color: white;
 }
 
 
@@ -191,12 +194,12 @@ form .form-element input:focus {
 }
 
 .grid-container {
-    width: 250px;
+    width: 200px;
     background: rgb(191 206 230);
 }
 
 .grid-container .side1 {
-    width: 250px;
+    width: 200px;
 }
 
 .grid-container .item {
@@ -205,7 +208,7 @@ form .form-element input:focus {
     background-repeat: repeat;
     border-color: #b2b2fb;
     padding: 20px;
-    width: 250px;
+    width: 200px;
     height: 50px;
 }
 
@@ -252,19 +255,6 @@ p {
 
 /* Create two unequal columns that floats next to each other */
 
-.columnad {
-    float: left;
-    /* Should be removed. Only for demonstration */
-}
-
-.leftad {
-    width: 250px;
-}
-
-.rightad {
-    min-width: 900px;
-}
-
 
 /* Clear floats after the columns */
 
@@ -275,32 +265,62 @@ p {
 table.blueTable {
     border: 1px solid #1C6EA4;
     background-color: #EEEEEE;
-    width: 100%;
+    width: fit-content;
     text-align: center;
     border-collapse: collapse;
 }
 
-table.blueTable td,
-table.blueTable th {
-    border: 1px solid #AAAAAA;
-    padding: 3px 2px;
-    height: 20px;
+table.blueTable tbody td {
+    font-size: 15px;
+    height: 25px;
+    width: fit-content;
+    padding: 0px 2px;
 }
 
-table.blueTable tbody td {
-    font-size: 13px;
-    height: 40px;
+table.blueTable tbody img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.blueTable button {
+    padding: 2px 2px;
+    margin: 3px;
+    background-color: rgb(204, 197, 253);
+    border: none;
+    color: white;
+    width: fit-content;
+}
+
+.blueTable button:hover {
+    padding: 2px 2px;
+    margin: 3px;
+    background-color: rgb(79, 54, 241);
+    border: none;
+    color: white;
+    width: fit-content;
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+table.blueTable tbody img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
 table.blueTable tr:nth-child(even) {
-    background: #D0E4F5;
+    background: #a4d4fd;
 }
 
 table.blueTable thead th {
-    font-size: 16px;
+    font-size: 15px;
+    height: 25px;
     font-weight: bold;
     color: #FFFFFF;
     text-align: center;
+    width: fit-content;
+    border: 1px solid white;
+    padding: 0px 2px;
     background-color: black;
 }
 
@@ -320,6 +340,54 @@ table.blueTable thead th {
     border-radius: 10px;
     padding: 5px;
     margin: 5px;
+}
+
+.catadder {
+    margin-left: 207px;
+    display: flex;
+    flex-direction: column;
+}
+
+#addcat {
+    font-size: 15px;
+    width: 230px;
+    position: sticky;
+    height: fit-content;
+    background-color: rgb(187, 215, 255);
+    padding: 5px;
+    margin: 5px;
+}
+
+#addcat input {
+    font-size: 15px;
+    padding: 2px;
+    width: 220px;
+}
+
+#addsubcat {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    width: 345px;
+    position: relative;
+    height: fit-content;
+    background-color: rgb(187, 215, 255);
+    padding: 6px;
+    margin: 9px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#addsubcat input {
+    font-size: 15px;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+.nest {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .bird {

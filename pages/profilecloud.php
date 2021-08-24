@@ -1,24 +1,157 @@
 <?php include '../templates/header.php'; ?>
+<?php
 
+include("../templates/logint.php");
+
+$username=$_SESSION['username'];
+        
+$id	=$_SESSION['id']; ?>
+<?php
+error_reporting(0);
+?>
+<?php
+$msg = "";
+
+// If upload button is clicked ...
+if (isset($_POST['upload'])) {
+    $title		= $_POST['title'];
+	$price 		= $_POST['price'];
+    $shortdes   = $_POST['shortdes'];
+	$livelink	= $_POST['livelink'];
+    $filename   = $_FILES["uploadfile"]["name"];
+    $tempname   = $_FILES["uploadfile"]["tmp_name"];
+    $folder     = "../images/showcase/" . $filename;
+// make connection with this one 
+    $db = mysqli_connect("localhost", "root", "", "cloud");
+    // Get all the submitted data from the form
+ 
+	$sql = "INSERT INTO showcase (title, price, shortdes, livelink, filename ) VALUES ('$title', '$price', '$shortdes', '$livelink','$filename')";
+		$stmtinsert = $db->prepare($sql);
+		$result = $stmtinsert->execute([$title, $price, $shortdes, $livelink, $filename]);
+
+    // Execute query
+    mysqli_query($db, $sql);
+
+    // Now let's move the uploaded image into the folder: image
+    if (move_uploaded_file($tempname, $folder)) {
+        $msg = "Image uploaded successfully";
+    } else {
+        $msg = "Failed to upload image";
+    }
+}
+$result = mysqli_query($db, "SELECT * FROM showcase");
+while ($data = mysqli_fetch_array($result)) {
+
+?>
+    <img src="<?php echo $data['Filename']; ?>">
+
+<?php
+}
+?>
 <!--body part starts here ............body part starts here ............body part starts here ............-->
 <title>Profile</title>
 
+<div class="chat-popup2" id="myFormc">
+    <div class="ccontainerc">
+        <div class="cheader">
+            <img src="../images/logow.svg" style="width: 50px;  margin-left:12px;">
+            <img src="../images/closew.svg" style="width: 15px; margin-right:12px;" onclick="clForm()">
+        </div>
+        <div class="chatarea">
+            <div class="chatm">
+                <img src="../images/chat.svg" width="70px">
+                <div>
+                    <a>Support Operator </a><br>
+                    <a>Cloud Company </a>
 
+                </div>
+            </div>
+            <div class="chatr">
+                <div class="msg">
+                    <p>HE</p>
+                    <span class="time-right">11:00</span></div>
+                <img src="../images/chat.svg" width="50px">
+            </div>
+            <div class="chatr">
+                <div class="msg">
+                    <p>allalal</p>
+                    <span class="time-right">11:00</span></div>
+                <img src="../images/chat.svg" width="50px">
+            </div>
+            <div class="chatr">
+                <div class="msg">
+                    <p>allalal</p>
+                    <span class="time-right">11:00</span></div>
+                <img src="../images/chat.svg" width="50px">
+            </div>
+            <div class="chatl">
+                <img src="../images/chat.svg" width="50px">
+                <div class="msg">
+                    <p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+            </div>
+            <div class="chatl">
+                <img src="../images/chat.svg" width="50px">
+                <div class="msg">
+                    <p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+            </div>
+            <div class="chatl">
+                <img src="../images/chat.svg" width="50px">
+                <div class="msg">
+                    <p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+            </div>
+            <div class="chatl">
+                <img src="../images/chat.svg" width="50px">
+                <div class="msg">
+                    <p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+            </div>
+            <div class="chatl">
+                <img src="../images/chat.svg" width="50px">
+                <div class="msg">
+                    <p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+            </div>
+            <div class="chatl">
+                <img src="../images/chat.svg" width="50px">
+                <div class="msg">
+                    <p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+            </div>
+            <div class="chatl">
+                <img src="../images/chat.svg" width="50px">
+                <div class="msg">
+                    <p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+            </div>
+            <div class="chatl">
+                <img src="../images/chat.svg" width="50px">
+                <div class="msg">
+                    <p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+            </div>
+        </div>
+        <div class="cfooter">
+            <div class="a"><img src="../images/up.svg" width="15px"></div>
+            <div class="b"><textarea placeholder="Type message.."></textarea></div>
+            <div class="c"><button type="submit">Send</button></div>
+        </div>
+    </div>
+</div> 
 <div id="navbar">
-    <a><button class="signin">logout</button></a>
+<a href="logout.php">logout</a>
     <a href="show.php">Showcase</a>
-    <a href="wwr.php" href="about.php">About Us</a>
-    <a href="javascript:void(0)">Terms and Conditions </a>
+    <a href="about.php" href="about.php">About Us</a>
     <a href="placeorder.php">Place an Order</a>
     <a href="blog.php">Blog</a>
-    
     <a class="active" href="javascript:void(0)">Home</a>
 
 
 </div>
 
 
-<body>
 
 
 
@@ -40,17 +173,27 @@
                         </tr>
 
                         <tr rowspan="3">
-                            <td colspan="3" style="text-align: left;font-weight:bold;">
-                                <p>Email here (editable)</p>
+<?php
 
-                                <p>Country</p>
-                                <p>phone</p>
-                                <p>Age</p>
-                                <p>On time Projects</p>
-                                <p>Recommendations</p>
-                                <p>Funds</p> <textarea style="height: 20px;width:50px;resize: none;">50$</textarea>
-                                <button class="openboxb" >Deposite funds</button><br>
-                                <button class="openboxb">withdraw request</button></td>
+$sql = "SELECT * FROM clientdata ";
+
+$sql = "SELECT id,firstname, lastname, username, email, phone, country,skill,expertise, password  FROM clouddata WHERE username='$username' AND id='$id'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+
+while($row = $result->fetch_assoc()) {
+    echo "<p>". $row["id"]."</p><p>". $row["firstname"] ."</p><p>". $row["lastname"] ."</p><p>". $row["username"]."</p><p>". $row["email"]."</p><p>" . $row["phone"]."</p><p>" .  $row["country"]. "</p><p>" .  $row["skill"] ."</p><p>" .  $row["expertise"]  ."</p><p>".  $row["password"] ."</p>";
+}
+
+} else {
+echo "0 results";
+}
+?>
+                                <p>Funds</p> 
+                                <div style="display:flex;"><textarea style="margin:2px;height:30px; resize:none;padding: 2px;width: 60px;font-size: 15px;">50$</textarea> 
+                                <button class="openboxb" >Deposite</button>
+                                <button class="openboxb">withdraw</button></td></div>
                         </tr>
 
 
@@ -61,15 +204,15 @@
                     <div> Showcases <button class="openshowcase" onclick="showCase()">Upload</button>
   
                         <div class="scbox">
-                            <div><img src="../images/cbc.jpg " ></div>
-                            <div><img src="../images/cbc.jpg " ></div>
-                            <div><img src="../images/cbc.jpg " ></div>
-                            <div><img src="../images/cbc.jpg " ></div>
-                            <div><img src="../images/cbc.jpg " ></div>
-                            <div><img src="../images/cbc.jpg " ></div>   
-                            <div><img src="../images/cbc.jpg " ></div>
-                            <div><img src="../images/cbc.jpg " ></div>
-                            <div><img src="../images/cbc.jpg " ></div>                                
+                            <div><a target="_blank" href="../images/ppp.jpg"><img src="../images/ppp.jpg"></div>
+                            <div><a target="_blank" href="../images/cbc.jpg"><img src="../images/cbc.jpg " ></a></div>
+                            <div><a target="_blank" href="../images/cbc.jpg"><img src="../images/cbc.jpg " ></a></div>
+                            <div><a target="_blank" href="../images/cbc.jpg"><img src="../images/cbc.jpg " ></a></div>
+                            <div><a target="_blank" href="../images/cbc.jpg"><img src="../images/cbc.jpg " ></a></div>
+                            <div><a target="_blank" href="../images/cbc.jpg"><img src="../images/cbc.jpg " ></a></div>   
+                            <div><a target="_blank" href="../images/cbc.jpg"><img src="../images/cbc.jpg " ></a></div>
+                            <div><a target="_blank" href="../images/cbc.jpg"><img src="../images/cbc.jpg " ></a></div>
+                            <div><a target="_blank" href="../images/cbc.jpg"><img src="../images/cbc.jpg " ></a></div>                                
                         </div>
                     </div>
                             
@@ -81,7 +224,7 @@
             </div>
 
         </div>  
-        <div class="rightside">
+    <div class="rightside">
                 <div class="all">
 
                         <div class="ordertop">
@@ -103,10 +246,7 @@
                         <div class="orderboxdrop">
                             <label>Project Descriptions</label>
 
-                            <textarea>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex a odit aut omnis excepturi? Aspernatur, atque vitae. Minus aliquid possimus animi deleniti optio dicta ipsum repudiandae quia quod ad quo recusandae, nam modi iusto accusamus! Iusto officiis
-                            laudantium necessitatibus modi autem corporis dolor labore, maiores animi, aut explicabo architecto pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, ipsum?
-                            </textarea>
+                            <textarea> </textarea>
                         </div>
                     <div id="clockdiv">
                                     <div>
@@ -127,62 +267,59 @@
                                     </div>
                     </div>
                     <button class="btncom" onclick="opFormcom()">COMPLETE</button>
-                <!--  
-                    </div>
-                        <div class="chatall">
+                
+                </div>
+                <div class="chatall" >
                         <h2>Chat Messages</h2>
                         <div class="container12">
 
 
                             <div class="container11">
-                                <img src="images/proc.svg" alt="Avatar" style="width:100%;">
+                                <img src="../images/proc.svg" style="width:100%;">
                                 <p>Hello. How are you today?</p>
                                 <span class="time-right">11:00</span>
                             </div>
 
                             <div class="container11 darker">
-                                <img src="images/pro.svg" alt="Avatar" class="right" style="width:100%;">
+                                <img src="../images/pro.svg" class="right" style="width:100%;">
                                 <p>Hey! I'm fine. Thanks for asking!</p>
                                 <span class="time-left">11:01</span>
                             </div>
 
                             <div class="container11">
-                                <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
+                                <img src="../images/pro.svg" style="width:100%;">
                                 <p>Sweet! So, what do you wanna do today?</p>
                                 <span class="time-right">11:02</span>
                             </div>
 
                             <div class="container11 darker">
-                                <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
+                                <img src="../images/pro.svg" class="right" style="width:100%;">
                                 <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
                                 <span class="time-left">11:05</span>
                             </div>
 
                         </div>
-                        <div class="chatwid">
-                            <table style="width:auto;">
-                                <tr>
-                                    <td><textarea placeholder="Type message.." name="msg" class="textareaccc"></textarea>
-                                    </td>
-                                    <td><button type="submit" class="btnsend">Send</button></td>
-                                </tr>
-                            </table>
+                        <div class="cfooterorder">
+                            <div class="image-upload">
+                                <label for="file-input">
+                                    <img src="../images/up.svg" width="15px"/>
+                                </label>
+                                <input id="file-input" type="file" />
+                            </div>
+                            <div><textarea placeholder="Type message.." ></textarea></div>
+                            <div><button type="submit"  >Send</button></div>
                         </div>
-                        <div><input type="file" id="myFile" name="filename"></div>
+                        
+                        
 
-                    </div> -->
-
-                    
-
+                    </div> 
 
 
+               
 
-                </div>
-
-            </div>
-         </div>
+        </div>
     </div>
-</div>
+
 <!-- its the review pop up  its the review pop up its the review pop up its the review pop up  -->
 <div class="form-popupcom " id="myFormcom ">
     <form action="/action_page.php " class="containercom ">
@@ -218,25 +355,39 @@
     </div>
 </div>
 <div class="showform" id="showcaseform">
-                            <form action="/action_page.php" class=.shawcontainer">
-                                 <div class="showbox ">
-                                        <div class="showformleft ">
-                                                <p>title</p>
-                                                <textarea></textarea>
-                                                <p>Selling price</p>
-                                                <textarea></textarea>
-                                                <p >project description</p>
-                                                <textarea style="height:100px"></textarea>
-                                                <p>Live link</p>
-                                                <textarea ></textarea>
-                                            <button type="button " class="openboxbutton" onclick="closeshowcase() ">Close</button>
-                                        </div>
+                           
+                     <div class="showbox ">
+                     <div class="showformleft ">
+                    <form method="POST" action="" enctype="multipart/form-data">
+                    <label for="title"><b>title</b></label><br>
+					<input class="form-control" id="title" type="text" name="title" required><br>
 
-                                        <div class="showformright" >
-                                            <p>please upload your design here </p>
-                                            <input type="file " id="myFile " name="filename ">
-                                            <button>upload</button>
+					<label for="price"><b>price</b></label><br>
+					<input class="form-control" id="price"  type="text" name="price" required><br>
+
+					<label for="shortdes"><b>short description</b></label><br>
+					<input class="form-control" id="shortdes"  type="shortdes" name="shortdes" required><br>
+
+					<label for="livelink"><b>Live link</b></label><br>
+					<input class="form-control" id="livelink"  type="text" name="livelink" required><br>
+                   
+
+            <div>
+                <button type="submit" name="upload">
+                    UPLOAD
+                </button>
+            </div>
+       
                                         </div>
+                                        <div class="showboxright">
+                                            <img src="../images/close.png" width="20px" onclick="closeshowcase()">
+                                            <div class="drop-zone">
+                                            
+                                                <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                                                <input type="file" name="uploadfile" value="" class="drop-zone__input">
+                                            </div>
+                                        </div>
+                                        
                                  </div>
                             </form>
                         </div>

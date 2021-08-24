@@ -2,7 +2,7 @@
 <html lang="en">
 
   <link rel="stylesheet" href="../css/pc6.css">
-  <link rel="stylesheet" href="ads.css">
+  <link rel="stylesheet" href="stl.css">
 <header>
      
 
@@ -17,13 +17,19 @@
     <div class="grid-container left">
     <div class="side1">
                     <div class="item">
-                        <a href="index.html">Index</a>
+                        <a href="index.php">logout</a>
+                    </div>
+                    <div class="item">
+                        <a href="home.php">Dashboard</a>
+                    </div>
+                    <div class="item">
+                        <a href="quality.php">Quality Control</a>
                     </div>
                     <div class="item">
                         <a href="add.php">Add Services</a>
                     </div>
                     <div class="item">
-                        <a href="pd.php">Project Distribution</a>
+                        <a href="pd.php">Distributed projects</a>
                     </div>
                     <div class="item activec">
                         <a href="pdr.php">Project Distributor</a>
@@ -38,9 +44,7 @@
                     <div class="item">
                         <a href="cc.php">Registered Cloud Details</a>
                     </div>
-                    <div class="item">
-                        <a href="ptc.php">project type and Cost</a>
-                    </div>
+                    <!-- -->
                     <div class="item">
                         <a href="cf.php">Chat Filter </a>
                     </div>

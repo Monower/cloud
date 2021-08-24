@@ -2,7 +2,7 @@
 <html lang="en">
 
   <link rel="stylesheet" href="../main.css">
-  <link rel="stylesheet" href="ads.css">
+  <link rel="stylesheet" href="stl.css">
 <header>
 
  <div class="col-md-12 m-3 p-2"  id="nav">
@@ -77,7 +77,7 @@
           <a href="clientd.html">Client Details</a>
            </div>
          <div class="item ">
-         <a href="pd.html">Project Distribution</a>
+         <a href="pd.html">Distributed projects</a>
           </div>
               <div class="item">
          <a href="cc.html">Client Chart</a>

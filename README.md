@@ -1,1 +1,0 @@
-#This is the official website of cloud company.

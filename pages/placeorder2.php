@@ -1,11 +1,4 @@
 <?php include '../templates/header.php'; ?>
-<?php
-
-include("../templates/logint.php");
-
-$username=$_SESSION['username'];
-        
-$id	=$_SESSION['id']; ?>
 <!--body part starts here ............body part starts here ............body part starts here ............-->
 <title>Profile</title>
 
@@ -97,9 +90,9 @@ $id	=$_SESSION['id']; ?>
             <div class="c"><button type="submit">Send</button></div>
         </div>
     </div>
-</div> 
+</div>
 <div id="navbar">
-     <a href="logout.php">logout</button></a>
+    <a><button class="signin" onclick="openlForm()">logout</button></a>
     <a href="show.php">Showcase</a>
     <a href="wwr.php" href="about.php">About us</a>
     <a href="placeorder.php">Place an Order</a>
@@ -115,151 +108,142 @@ $id	=$_SESSION['id']; ?>
 
         <div class="leftside">
             <div style="width: 100%;">
-            <tr>
+                <table style="width:100%">
+                    <thead>
+                        <tr>
                             <td colspan="1"><img src="../images/pro.svg" class="topleft" width="50px">
                             </td>
                             <td colspan="2" style="text-align:left;">
-                              
+                                <p>MY NAME </p>
                             </td>
-            </tr>
-                          
-                        <?php
+                        </tr>
 
-                                $sql = "SELECT * FROM clientdata ";
+                        <tr rowspan="3">
+                            <td colspan="3" style="text-align: left;font-weight:bold;">
+                                <p>Email</p>
+                                <p>Country</p>
+                                <p>Projects completed</p>
+                                <p>On time Projects</p>
+                                <p>Recommendations</p>
+                                <p>Funds</p>
+                                <div style="display:flex;">
+                                    <textarea style="margin:2px;height:30px; resize:none;padding: 2px;width: 60px;font-size: 15px;">50$</textarea>
+                                    <button class="openboxb">Deposite</button>
+                                    <button class="openboxb">withdraw</button>
+                                </div>
+                            </td>
 
-                                $sql = "SELECT id,firstname, lastname, username, email, phone, country, password  FROM clientdata WHERE username='$username' AND id='$id'";
-                                $result = $conn->query($sql);
-
-                                if ($result->num_rows > 0) {
-
-                                while($row = $result->fetch_assoc()) {
-                                    echo "<p>". $row["id"]."</p><p>". $row["firstname"] ."</p><p>". $row["lastname"] ."</p><p>". $row["username"]."</p><p>". $row["email"]."</p><p>" . $row["phone"]."</p><p>" .  $row["country"] ."</p><p>".  $row["password"] ."</p>";
-                                }
-
-                                } else {
-                                echo "0 results";
-                                }
-                        ?>
-                                <div style="display:flex;"><textarea style="margin:2px;height:30px; resize:none;padding: 2px;width: 60px;font-size: 15px;">50$</textarea> 
-                                <button class="openboxb" >Deposite</button>
-                                <button class="openboxb">withdraw</button></td></div>
-                     
+                        </tr>
 
 
-               
+
+                    </thead>
+                </table>
+
             </div>
-
         </div>
-          <div class="rightside" >
-                <div class="all">
 
-                        <div class="ordertop">
-                            <div class="orderboxtop">
-                                <label>Project Details</label>
-                                <input class="te" type="text" placeholder="" required>
+
+        <div class="rightside">
+            <div class="orderplacebox">
+                <div class="orderplacer">
+                    <div class="part1">
+                        <div class="form-element">
+                            <span class="details"><p>catagory</p></span>
+                            <input type="text" placeholder="" required>
+                        </div>
+                        <div class="form-element">
+                            <span class="details"><p>subcatagory</p></span>
+                            <input type="text" placeholder="" required>
+                        </div>
+                        <div class="form-element">
+                            <span class="details">estimated time</span>
+                            <div class="plob">
+                                <input type="text" placeholder="autofill" readonly><button>Express</button>
                             </div>
-                            <div class="orderboxtop">
-                                <label>Project Title</label>
-                                <input class="te" type="text" placeholder="" required>
+                        </div>
+                        <div class="form-element">
+                            <span class="details">discount code</span>
+                            <div class="plob">
+                                <input type="text" placeholder="" ><button>Apply</button>
                             </div>
-                            <div class="orderboxtop">
-                                <label>Project Cost</label>
-                                <input class="te" type="text" placeholder="" required>
-                            </div>
+                        </div>
+                        <div class="form-element">
+                            <span class="details">cost</span>
+                            <input type="text" placeholder="autofill">
 
                         </div>
-                        
-                        <div class="orderboxdrop">
-                            <label>Project Descriptions</label>
 
-                            <textarea>
-                           </textarea>
-                        </div>
-                    <div id="clockdiv">
-                                    <div>
-                                        <span class="days"></span>
-                                        <div class="smalltext">Days</div>
-                                    </div>
-                                    <div>
-                                        <span class="hours"></span>
-                                        <div class="smalltext">Hours</div>
-                                    </div>
-                                    <div>
-                                        <span class="minutes"></span>
-                                        <div class="smalltext">Minutes</div>
-                                    </div>
-                                    <div>
-                                        <span class="seconds"></span>
-                                        <div class="smalltext">Seconds</div>
-                                    </div>
                     </div>
-                    <button class="btncom" onclick="opFormcom()">COMPLETE</button>
-                
+                    <div class="part2">
+                        <div class="form-element">
+                            <span class="details"><p>what you will get</p></span>
+                            <input type="text" placeholder="autofill" >
+                        </div>
+                        <div class="form-element">
+                            <span class="details"><p>project description</p></span>
+                            <textarea> please describe what you need</textarea>
+                        </div>
+                        <form action="/action_page.php">
+                            
+                            <input type="file" id="files" name="files" multiple><br><br>
+                            <input type="submit">
+                        </form>
                     </div>
-
-              <!--    chat starts here  -->  
-                <div class="chatall" >
-                        <h2>Messages</h2>
-                        <div class="container12">
-
-
-                            <div class="container11">
-                                <img src="../images/proc.svg" style="width:50px;">
-                                <p>Hello. How are you today?</p>
-                                <span class="time-right">11:00</span>
-                            </div>
-
-                            <div class="container11 darker">
-                                <img src="../images/pro.svg" class="right" style="width:50px;">
-                                <p>Hey! I'm fine. Thanks for asking!</p>
-                                <span class="time-left">11:01</span>
-                            </div>
-
-                            <div class="container11">
-                                <img src="../images/pro.svg" style="width:50px;">
-                                <p>Sweet! So, what do you wanna do today?</p>
-                                <span class="time-right">11:02</span>
-                            </div>
-
-                            <div class="container11 darker">
-                                <img src="../images/pro.svg" class="right" style="width:50px;">
-                                <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
-                                <span class="time-left">11:05</span>
-                            </div>
-
-                        </div>
-                        <div class="cfooterorder">
-                            <div class="image-upload">
-                                <label for="file-input">
-                                    <img src="../images/up.svg" width="15px"/>
-                                </label>
-                                <input id="file-input" type="file" />
-                            </div>
-                            <div><textarea placeholder="Type message.." ></textarea></div>
-                            <div><button type="submit"  >Send</button></div>
-                        </div>
-                        
-                        
-
-                    </div> 
-
-
-
-                        <!--   chat ends here    -->
-
-                    
-
-
-
-
-            
-
+                </div>
             </div>
-     </div>
+            <div class="orderplacebox">
+                <div class="orderplacer">
+                    <div class="part1">
+                        <div class="form-element">
+                            <span class="details"><p>catagory</p></span>
+                            <input type="text" placeholder="" required>
+                        </div>
+                        <div class="form-element">
+                            <span class="details"><p>subcatagory</p></span>
+                            <input type="text" placeholder="" required>
+                        </div>
+                        <div class="form-element">
+                            <span class="details">estimated time</span>
+                            <div class="plob">
+                                <input type="text" placeholder="autofill" readonly><button>Express</button>
+                            </div>
+                        </div>
+                        <div class="form-element">
+                            <span class="details">discount code</span>
+                            <div class="plob">
+                                <input type="text" placeholder="" ><button>Apply</button>
+                            </div>
+                        </div>
+                        <div class="form-element">
+                            <span class="details">cost</span>
+                            <input type="text" placeholder="autofill">
+
+                        </div>
+
+                    </div>
+                    <div class="part2">
+                        <div class="form-element">
+                            <span class="details"><p>what you will get</p></span>
+                            <input type="text" placeholder="autofill" >
+                        </div>
+                        <div class="form-element">
+                            <span class="details"><p>project description</p></span>
+                            <textarea> please describe what you need</textarea>
+                        </div>
+                        <form action="/action_page.php">
+                            <label for="files">Select files:</label>
+                            <input type="file" id="files" name="files" multiple><br><br>
+                            <input type="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
-  
     <!-- its the review pop up  its the review pop up its the review pop up its the review pop up  -->
     <div class="form-popupcom" id="myFormcom">
         <form action="/action_page.php" class="containercom">

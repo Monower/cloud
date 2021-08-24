@@ -1,11 +1,103 @@
 <?php include '../templates/header.php';?>
 <title>Showcase</title>
+<div class="chat-popup2" id="myFormc">
+    <div class="ccontainerc">
+        <div class="cheader">
+            <img src="../images/logow.svg" style="width: 50px;  margin-left:12px;">
+            <img src="../images/closew.svg" style="width: 15px; margin-right:12px;" onclick="clForm()">
+        </div>
+        <div class="chatarea">
+            <div class="chatm">
+                <img src="../images/chat.svg" width="70px">
+                <div>
+                    <a>Support Operator </a><br>
+                    <a>Cloud Company </a>
+
+                </div>
+            </div>
+            <div class="chatr">
+                <div class="msg">
+                    <p>HE</p>
+                    <span class="time-right">11:00</span></div>
+                <img src="../images/chat.svg" width="50px">
+            </div>
+            <div class="chatr">
+                <div class="msg">
+                    <p>allalal</p>
+                    <span class="time-right">11:00</span></div>
+                <img src="../images/chat.svg" width="50px">
+            </div>
+            <div class="chatr">
+                <div class="msg">
+                    <p>allalal</p>
+                    <span class="time-right">11:00</span></div>
+                <img src="../images/chat.svg" width="50px">
+            </div>
+            <div class="chatl">
+                <img src="../images/chat.svg" width="50px">
+                <div class="msg">
+                    <p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+            </div>
+            <div class="chatl">
+                <img src="../images/chat.svg" width="50px">
+                <div class="msg">
+                    <p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+            </div>
+            <div class="chatl">
+                <img src="../images/chat.svg" width="50px">
+                <div class="msg">
+                    <p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+            </div>
+            <div class="chatl">
+                <img src="../images/chat.svg" width="50px">
+                <div class="msg">
+                    <p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+            </div>
+            <div class="chatl">
+                <img src="../images/chat.svg" width="50px">
+                <div class="msg">
+                    <p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+            </div>
+            <div class="chatl">
+                <img src="../images/chat.svg" width="50px">
+                <div class="msg">
+                    <p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+            </div>
+            <div class="chatl">
+                <img src="../images/chat.svg" width="50px">
+                <div class="msg">
+                    <p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+            </div>
+            <div class="chatl">
+                <img src="../images/chat.svg" width="50px">
+                <div class="msg">
+                    <p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span></div>
+            </div>
+        </div>
+        <div class="cfooter">
+            <div class="a"> <div class="image-upload">
+                                    <label for="file-input">
+                                        <img src="../images/up.svg" width="15px"/>
+                                    </label>
+                                    <input id="file-input" type="file" />
+                </div></div>
+            <div class="b"><textarea placeholder="Type message.."></textarea></div>
+            <div class="c"><button type="submit">Send</button></div>
+        </div>
+    </div>
+</div> 
 <div id="navbar">
-  <a><button class="signin" onclick="openlForm()">login</button></a>
-  <!-- <a href="javascript:void(0)">Terms and Conditions </a> -->
+<a href="../templates/index.php">login</a>
   <a href="blog.php">Blog</a>
-  <a href="placeorder.php">Place an Order</a>
-  <!-- <a><button class="signin" onclick="openForm()">Sign up</button></a> -->
+  <a>Place an Order</a> 
   <a class="active" href="show.php">Showcase</a>
   <a href="about.php">About Us </a>
   <a  href="../index.php">Home</a>

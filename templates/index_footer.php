@@ -1,14 +1,14 @@
 <div class="mobfooter">
     <div class="headd">
         <div class="peta">
-            <img src="./images/logo.svg">
+            <img src="images/logo.svg">
         </div>
         <div class="chata">
             <div class="tnav" id="Mtn">
-                <a onclick="openlForm()"><img src="./images/mob/logd.svg">log in</a>
-                <a href="#about"><img src="./images/mob/abusd.svg">About Us</a>
-                <a href="#home"><img src="./images/mob/s$p.svg">services and Costs</a>
-                <a href="#news"><img src="./images/mob/t&c.svg">terms and conditions</a>
+                
+                <a href="#about"><img src="images/mob/abusd.svg">About Us</a>
+                <a href="#home"><img src="images/mob/s$p.svg">services and Costs</a>
+                <a href="#news"><img src="images/mob/t&c.svg">terms and conditions</a>
 
 
 
@@ -17,11 +17,11 @@
         </div>
     </div>
     <div class="lfooter">
-        <button id="moba"><img src="./images/mob/scase.svg" ></button>
-        <button id="mobb"><img src="./images/mob/blo.svg" ></button>
-        <button id="mobc"><img src="./images/mob/homei.svg" ></button>
-        <button onclick="openForm()"><img src="./images/mob/sign.svg" ></button>
-        <button><img src="./images/mob/chatt.svg" ></button>
+        <button id="moba"><img src="images/mob/scase.svg" ></button>
+        <button id="mobb"><img src="images/mob/blo.svg" ></button>
+        <button id="mobc"><img src="images/mob/homei.svg" ></button>
+        <button onclick="openlForm()"><img src="images/mob/logd.svg"></button>
+        <button onclick="opForm()"><img src="images/mob/chatt.svg" ></button>
     </div>
 </div>
 
@@ -31,7 +31,7 @@
     <div class="container1">
         <div class="row1">
             <div class="footer-col">
-                <img src="./images/logow.svg" alt="logo cc">
+                <img src="images/logow.svg" alt="logo cc">
             </div>
             <div class="footer-col">
                 <h4>help</h4>
@@ -87,54 +87,9 @@
         </div>
     </div>
     <!--chat button starts here  -->
-    <img src="../images/chat.svg" class="open-buttonc" onclick="opForm()">
-    <div class="chat-popup1" id="myFormc">
-        <div class="ccontainerc">
-            <div class="cheader">
-                <img src="./images/logow.svg" style="width: 50px;  margin-left:12px;">
-                <img src="./images/closew.svg" style="width: 15px; margin-right:12px;" onclick="clForm()">
-            </div>
-            <div class="chatarea">
-                
-
-                <div class="chatr">
-                    
-                    <div class="msg"><p>HE</p>
-                    <span class="time-right">11:00</span></div>
-                    <img src="./images/chat.svg" width="50px">
-                </div>
-                <div class="chatr">
-                    
-                    <div class="msg"><p>allalal</p>
-                    <span class="time-right">11:00</span></div>
-                    <img src="./images/chat.svg" width="50px">
-                </div>
-                <div class="chatr">
-                    
-                    <div class="msg"><p>allalal</p>
-                    <span class="time-right">11:00</span></div>
-                    <img src="./images/chat.svg" width="50px">
-                </div>
-                <div class="chatl">
-                    <img src="./images/chat.svg" width="50px">
-                    <div class="msg"><p>Hello. How are you today?</p>
-                    <span class="time-right">11:00</span></div>
-                </div>
-               
-            </div>
-            <div class="cfooter">
-                <div><img src="./images/up.svg" width="15px"></div>
-                <div><textarea placeholder="Type message.." ></textarea></div>
-                <div><button type="submit"  >Send</button></div>
-
-
-            </div>
-        </div>
-    </div>
-    </div>
+    <img src="./images/sup.svg" class="open-buttonc" onclick="opForm()">
+   
 </footer>
-
-
 <script>
     function showbox1() {
         document.getElementById("box1").style.display = "flex";
@@ -152,8 +107,6 @@
         document.getElementById("box2").style.display = "none";
     }
 </script>
-
-
 <script>
     function myfn() {
         var x = document.getElementById("Mtn");
@@ -164,26 +117,22 @@
         }
     }
 </script>
-
 <script type="text/javascript">
     document.getElementById("moba").onclick = function() {
-        location.href = "show.php";
+        location.href = "pages/show.php";
     };
     document.getElementById("mobb").onclick = function() {
-        location.href = "blog.php";
+        location.href = "pages/blog.php";
     };
     document.getElementById("mobc").onclick = function() {
         location.href = "index.php";
     };
-    document.getElementById("mobd").onclick = openForm();
+
 
     document.getElementById("mobe").onclick = function() {
-        location.href = "show.php";
+        location.href = "pages/show.php";
     };
 </script>
-
-
-
 <script>
     function showCase() {
         document.getElementById("showcaseform").style.display = "block";
@@ -269,7 +218,7 @@
         outputFormat: 'week|day|hour|minute|second',
     });
     cd5.start();
-</script>`
+</script>
 <script>
     function getTimeRemaining(endtime) {
         const total = Date.parse(endtime) - Date.parse(new Date());

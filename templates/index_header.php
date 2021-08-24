@@ -2,8 +2,8 @@
 <html lang="en">
 <script src="countDown.min.js"></script>
 <link href="css/count.css" media="all" rel="stylesheet" />
-<link rel="stylesheet" href="./css/p11.css">
-<link rel="stylesheet" href="./css/mo6.css">
+<link rel="stylesheet" href="./css/p20.css">
+<link rel="stylesheet" href="./css/mob9.css">
 <link rel="stylesheet" href="./css/mobcount1.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="images/iconn.png" />
@@ -11,25 +11,24 @@
 <header>
 
     <div class="logogg">
-        <a href="in.html"><img src="images/logo.svg" class="topleft" width="200px"></a>
+        <a href="index.php"><img src="./images/logotm.svg" class="topleft" width="200px"></a>
     </div>
 
     <!-- login form  starts here login form  starts here login form  starts here login form  starts here -->
     <div class="form-popuploginc" id="mylogin">
-        <form action="/action_page.php" class="login-containerlc">
-            <h1>Log in</h1>
-            <div class="form-elementlog">
-                <label>Username</label>
-                <input class="log" type="text" required>
-            </div>
-            <br>
-            <div class="form-elementlog">
-                <label>Password</label>
-                <input class="log" type="text" required>
-            </div>
-            <button type="submit" class="btnlog">login</button>
-            <button type="button" class="btncan" onclick="closelForm()">Close</button></td>
-        </form>
+    <form class="form" action="loginc.php" method="post">
+     	<h2>LOGIN</h2>
+     	<?php if (isset($_GET['error'])) { ?>
+     		<p class="error"><?php echo $_GET['error']; ?></p>
+     	<?php } ?>
+     	<label>User Name</label>
+     	<input type="text" name="username" placeholder="User Name"><br>
+
+     	<label>Password</label>
+     	<input type="password" name="password" placeholder="Password"><br>
+
+     	<button type="submit">Login</button>
+     </form>
 
     </div>
 
